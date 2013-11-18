@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspaceFilter version="1.0">
+    <filter root="/apps/intelligrape-site-cq">
+        <exclude pattern="/apps/intelligrape-site-cq/install.*"/>
+        <exclude pattern="/apps/intelligrape-site-cq/runmodes.*"/>
+    </filter>
+    <filter root="/etc/clientlibs/intelligrape-site-cq"/>
+	<filter root="/etc/designs/intelligrape-site-cq">
+        <exclude pattern="/etc/designs/intelligrape-site-cq/jcr:content.*"/>
+    </filter>
+</workspaceFilter>

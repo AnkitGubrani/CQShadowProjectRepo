@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
+    <OCD id="com.intelligrape.test.services.GoodbyeWorldService" name="%com.intelligrape.test.services.GoodbyeWorldService.name" description="%com.intelligrape.test.services.GoodbyeWorldService.description"/>
+    <Designate pid="com.intelligrape.test.services.GoodbyeWorldService">
+        <Object ocdref="com.intelligrape.test.services.GoodbyeWorldService"/>
+    </Designate>
+</metatype:MetaData>
