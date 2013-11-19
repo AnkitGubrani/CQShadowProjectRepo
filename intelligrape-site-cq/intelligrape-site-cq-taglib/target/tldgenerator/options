@@ -1,5 +1,5 @@
 -classpath
-'/home/ankit/intelligrape-site-cq/intelligrape-site-cq-taglib/target/classes:/home/ankit/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ankit/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar:/home/ankit/.m2/repository/org/apache/sling/org.apache.sling.api/2.3.0/org.apache.sling.api-2.3.0.jar:/home/ankit/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/ankit/.m2/repository/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar:/home/ankit/.m2/repository/com/squeakysand/jcr/squeakysand-jcr/0.3.0/squeakysand-jcr-0.3.0.jar:/home/ankit/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar:/home/ankit/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar:/home/ankit/.m2/repository/com/squeakysand/jsp/squeakysand-jsp/0.4.0/squeakysand-jsp-0.4.0.jar:/home/ankit/.m2/repository/org/jsoup/jsoup/1.6.1/jsoup-1.6.1.jar:/home/ankit/.m2/repository/com/squeakysand/sling/squeakysand-sling-taglib/0.3.0/squeakysand-sling-taglib-0.3.0.jar:/home/ankit/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/home/ankit/.m2/repository/org/osgi/org.osgi.core/4.1.0/org.osgi.core-4.1.0.jar:/home/ankit/.m2/repository/com/squeakysand/jcr/squeakysand-jcr-taglib/0.3.0/squeakysand-jcr-taglib-0.3.0.jar:/home/ankit/.m2/repository/com/squeakysand/sling/squeakysand-sling/0.3.0/squeakysand-sling-0.3.0.jar:/home/ankit/.m2/repository/com/cqblueprints/taglib/cqblueprints-taglib/5.5.1/cqblueprints-taglib-5.5.1.jar:/home/ankit/.m2/repository/com/squeakysand/osgi/squeakysand-osgi/0.4.0/squeakysand-osgi-0.4.0.jar:/home/ankit/.m2/repository/com/squeakysand/squeakysand-commons/0.4.0/squeakysand-commons-0.4.0.jar:/home/ankit/.m2/repository/javax/jcr/jcr/2.0/jcr-2.0.jar'
+'/home/ankit/CQ_Projects/intelligrape-site-cq/intelligrape-site-cq-taglib/target/classes:/home/ankit/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ankit/CQ_Projects/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar:/home/ankit/.m2/repository/org/apache/sling/org.apache.sling.api/2.2.4/org.apache.sling.api-2.2.4.jar:/home/ankit/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/ankit/.m2/repository/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar:/home/ankit/.m2/repository/com/squeakysand/jcr/squeakysand-jcr/0.3.0/squeakysand-jcr-0.3.0.jar:/home/ankit/.m2/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar:/home/ankit/.m2/repository/org/slf4j/slf4j-api/1.5.2/slf4j-api-1.5.2.jar:/home/ankit/.m2/repository/com/squeakysand/jsp/squeakysand-jsp/0.4.0/squeakysand-jsp-0.4.0.jar:/home/ankit/.m2/repository/org/jsoup/jsoup/1.6.1/jsoup-1.6.1.jar:/home/ankit/.m2/repository/com/squeakysand/sling/squeakysand-sling-taglib/0.3.0/squeakysand-sling-taglib-0.3.0.jar:/home/ankit/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/home/ankit/.m2/repository/org/osgi/org.osgi.core/4.1.0/org.osgi.core-4.1.0.jar:/home/ankit/.m2/repository/com/squeakysand/jcr/squeakysand-jcr-taglib/0.3.0/squeakysand-jcr-taglib-0.3.0.jar:/home/ankit/.m2/repository/com/squeakysand/sling/squeakysand-sling/0.3.0/squeakysand-sling-0.3.0.jar:/home/ankit/.m2/repository/com/cqblueprints/taglib/cqblueprints-taglib/5.5.1/cqblueprints-taglib-5.5.1.jar:/home/ankit/.m2/repository/com/squeakysand/osgi/squeakysand-osgi/0.4.0/squeakysand-osgi-0.4.0.jar:/home/ankit/.m2/repository/com/squeakysand/squeakysand-commons/0.4.0/squeakysand-commons-0.4.0.jar:/home/ankit/.m2/repository/javax/jcr/jcr/2.0/jcr-2.0.jar'
 -doclet
 'com.squeakysand.jsp.tldgenerator.TldGeneratorDoclet'
 -docletpath
@@ -9,9 +9,9 @@
 -source
 '1.6'
 -sourcepath
-'/home/ankit/intelligrape-site-cq/intelligrape-site-cq-taglib/src/main/java'
+'/home/ankit/CQ_Projects/intelligrape-site-cq/intelligrape-site-cq-taglib/src/main/java'
 -d
-'/home/ankit/intelligrape-site-cq/intelligrape-site-cq-taglib/target/classes/META-INF'
+'/home/ankit/CQ_Projects/intelligrape-site-cq/intelligrape-site-cq-taglib/target/classes/META-INF'
 -shortName
 'intelliTagLib'
 -filename
@@ -25,7 +25,7 @@
 -specificationVersion
 '2.1'
 -tagFilesDir
-'/home/ankit/intelligrape-site-cq/intelligrape-site-cq-taglib/src/main/resources/META-INF/tags'
+'/home/ankit/CQ_Projects/intelligrape-site-cq/intelligrape-site-cq-taglib/src/main/resources/META-INF/tags'
 -tagFilesInclude
 '**/*.tag,**/*.tagx'
 -processTagFiles

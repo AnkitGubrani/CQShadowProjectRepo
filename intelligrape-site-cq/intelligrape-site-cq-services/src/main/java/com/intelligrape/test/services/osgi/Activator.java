@@ -13,7 +13,6 @@ public class Activator extends BasicBundleActivator {
     private static final Logger LOG = LoggerFactory.getLogger(Activator.class);
 
     public Activator() {
-		super(LOG);
+		super();
 	}
-
 }

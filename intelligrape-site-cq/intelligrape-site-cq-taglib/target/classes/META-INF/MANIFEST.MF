@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1384773281288
+Bnd-LastModified: 1384855182782
 Build-Jdk: 1.7.0_21
 Built-By: ankit
 Bundle-Activator: com.intelligrape.test.taglib.osgi.Activator
@@ -41,7 +41,7 @@ Import-Package: com.cqblueprints.taglib;version="[5.5,6)",com.intelligra
  x.xml.validation,javax.xml.xpath,org.apache.commons.collections;version
  ="[3.2,4)",org.apache.commons.io;version="[1.4,2)",org.apache.commons.i
  o.filefilter;version="[1.4,2)",org.osgi.framework;version="[1.4,2)",org
- .osgi.util.tracker,org.slf4j;version="[1.6,2)",org.w3c.dom,org.xml.sax,
+ .osgi.util.tracker,org.slf4j;version="[1.5,2)",org.w3c.dom,org.xml.sax,
  org.xml.sax.helpers
 Sling-Bundle-Resources: /META-INF/tags
 Tool: Bnd-1.50.0
