@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" immediate="true" name="com.intelligrape.directorycleanup.impl.DirectoryCleanUpServiceImpl">
+        <implementation class="com.intelligrape.directorycleanup.impl.DirectoryCleanUpServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.intelligrape.directorycleanup.DirectoryCleanUpService"/>
+        </service>
+        <property name="service.pid" value="com.intelligrape.directorycleanup.impl.DirectoryCleanUpServiceImpl"/>
+        <reference name="slingRepository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindSlingRepository" unbind="unbindSlingRepository"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.intelligrape.intelligrapeComponents.impl.SearchWrapperImpl">
+        <implementation class="com.intelligrape.intelligrapeComponents.impl.SearchWrapperImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.intelligrape.intelligrapeComponents.SearchWrapper"/>
+        </service>
+        <property name="service.pid" value="com.intelligrape.intelligrapeComponents.impl.SearchWrapperImpl"/>
+        <reference name="queryBuilder" interface="com.day.cq.search.QueryBuilder" cardinality="1..1" policy="static" bind="bindQueryBuilder" unbind="unbindQueryBuilder"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.intelligrape.test.services.GoodbyeWorldService">
+        <implementation class="com.intelligrape.test.services.GoodbyeWorldService"/>
+        <service servicefactory="false">
+            <provide interface="com.intelligrape.test.services.GoodbyeWorldService"/>
+        </service>
+        <property name="service.vendor" type="String" value="CQ Blueprints"/>
+        <property name="service.description" type="String" value="Provides a friendly farewell."/>
+        <property name="service.pid" value="com.intelligrape.test.services.GoodbyeWorldService"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.intelligrape.directorycleanup.TestCleanUpServlet">
+        <implementation class="com.intelligrape.directorycleanup.TestCleanUpServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths" value="/bin/cleanup/test.html"/>
+        <property name="sling.servlet.methods" value="GET"/>
+        <property name="service.pid" value="com.intelligrape.directorycleanup.TestCleanUpServlet"/>
+        <reference name="cleanUpService" interface="com.intelligrape.directorycleanup.DirectoryCleanUpService" cardinality="1..1" policy="static" bind="bindCleanUpService" unbind="unbindCleanUpService"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.intelligrape.intelligrapeComponents.SearchServlet" activate="activate">
+        <implementation class="com.intelligrape.intelligrapeComponents.SearchServlet"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths" value="/search/service/search.html"/>
+        <property name="sling.servlet.methods" value="GET"/>
+        <property name="search.vendor" type="String" value="Intelligrape"/>
+        <property name="service.pid" value="com.intelligrape.intelligrapeComponents.SearchServlet"/>
+        <reference name="searchWrapper" interface="com.intelligrape.intelligrapeComponents.SearchWrapper" cardinality="1..1" policy="static" bind="bindSearchWrapper" unbind="unbindSearchWrapper"/>
+        <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
+    </scr:component>
+</components>

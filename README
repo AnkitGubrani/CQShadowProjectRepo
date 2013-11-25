@@ -1,0 +1,24 @@
+README
+
+==================
+ABOUT THIS PROJECT
+==================
+
+This is a sample test demo project. Over time this will grow to include a host of sample components/services based on the Adobe AEM platform.
+This project was generated from the com.cqblueprints.archetypes:multi-module Maven Archetype.
+
+=====================
+BUILDING THIS PROJECT
+=====================
+
+This project is intended to work with AEM 5.6 and above.
+
+To build this project you will need access to the Adobe Maven Repository and also the CQ Blueprints Maven Repository.
+
+1. Update maven configuration to connect to CQ blueprints and Adobe Public maven repositories.
+2. Update the parent level pom.xml with your instance specific information, such as cq.port, cq.host, cq.user, cq.password etc
+3. Use the following maven command to build the project:
+mvn clean install -P auto-deploy
+4. The first build of your project will fail. This is due to a "maven vault plugin" issue which expects "/apps/<project>/install" folder's existence for installing the osgi bundles.
+To resolve this issue, in CRXDELite navigate to /apps/<project> and create a nt:folder named install and save.
+5. Again build using the command in step 3. Your build run through smoothly. In case it does not add the -X switch to the command to dig the cause.

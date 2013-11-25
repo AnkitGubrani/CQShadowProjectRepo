@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Hero Container Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <text
+                jcr:primaryType="cq:Panel"
+                title="Text">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <imgtext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Image Text"
+                        name="./imgtext"
+                        xtype="textfield"/>
+                    <thumbtext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Thumb Text"
+                        name="./thumbtext"
+                        xtype="textfield"/>
+                </items>
+            </text>
+            <image
+                jcr:primaryType="cq:Panel"
+                title="Image">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <mainimg
+                        jcr:primaryType="cq:Widget"
+                        cropParameter="./mainimg/imageCrop"
+                        ddGroups="[media]"
+                        fileNameParameter="./mainimg/fileName"
+                        fileReferenceParameter="./mainimg/fileReference"
+                        height="200"
+                        mapParameter="./mainimg/imageMap"
+                        name="./mainimg/file"
+                        requestSuffix="/mainimg.img.png"
+                        rotateParameter="./mainimg/imageRotate"
+                        title="Main Image"
+                        xtype="smartimage"/>
+                    <thumbimg
+                        jcr:primaryType="cq:Widget"
+                        cropParameter="./thumbimg/imageCrop"
+                        ddGroups="[media]"
+                        fileNameParameter="./thumbimg/fileName"
+                        fileReferenceParameter="./thumbimg/fileReference"
+                        height="200"
+                        mapParameter="./thumbimg/imageMap"
+                        name="./thumbimg/file"
+                        requestSuffix="/thumbimg.img.png"
+                        rotateParameter="./thumbimg/imageRotate"
+                        title="Thumbnail Image"
+                        xtype="smartimage"/>
+                    <mainResType
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./mainimg/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <thumbResType
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./thumbimg/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                </items>
+            </image>
+        </items>
+    </items>
+</jcr:root>
