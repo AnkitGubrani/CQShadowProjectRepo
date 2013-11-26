@@ -5,4 +5,5 @@
     <filter root="/etc/packages/com.intelligrape.test/intelligrape-site-cq-config-1.0.0-SNAPSHOT.zip" />
     <filter root="/etc/packages/com.intelligrape.test/intelligrape-site-cq-view-1.0.0-SNAPSHOT.zip" />
     <filter root="/etc/packages/com.cqblueprints.taglib/cqblueprints-taglib-all-5.5.1.zip" />
+    <filter root="/etc/packages/day_internal/consulting/acs-aem-commons-content-1.2.0.zip" />
 </workspaceFilter>
