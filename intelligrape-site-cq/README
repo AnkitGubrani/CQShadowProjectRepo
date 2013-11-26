@@ -21,4 +21,5 @@ To build this project you will need access to the Adobe Maven Repository and als
 mvn clean install -P auto-deploy
 4. The first build of your project will fail. This is due to a "maven vault plugin" issue which expects "/apps/<project>/install" folder's existence for installing the osgi bundles.
 To resolve this issue, in CRXDELite navigate to /apps/<project> and create a nt:folder named install and save.
-5. Again build using the command in step 3. Your build run through smoothly. In case it does not add the -X switch to the command to dig the cause.
+5. Again build using the command in step 3. Your build should run through smoothly. In case it does not add the -X switch to the command to dig the cause.
+  
