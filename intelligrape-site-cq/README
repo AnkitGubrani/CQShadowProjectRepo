@@ -1,41 +1,24 @@
-README v${project.version}
-
-Craig S. Dickson (craig@craigsdickson.com)
-Ruben Reusser (rr@headwire.com)
-
+README
 
 ==================
 ABOUT THIS PROJECT
 ==================
 
+This is a sample test demo project. Over time this will grow to include a host of sample components/services based on the Adobe AEM platform.
 This project was generated from the com.cqblueprints.archetypes:multi-module Maven Archetype.
-
-More information on the generation process can be found here:
-
-http://www.cqblueprints.com/xwiki/bin/view/Blue+Prints/The+CQ+Project+Maven+Archetype
-
 
 =====================
 BUILDING THIS PROJECT
 =====================
 
-This project is intended to work with Adobe CQ 5.5 and above.
+This project is intended to work with AEM 5.6 and above.
 
 To build this project you will need access to the Adobe Maven Repository and also the CQ Blueprints Maven Repository.
 
-Check the following URLs for information on connecting to these two Repositories:
-
-* Connecting to the CQ Blueprints Maven Repository - http://www.cqblueprints.com/xwiki/bin/view/Blue+Prints/Connecting+to+the+CQ+Blueprints+Repository
-
-* Connecting to the Adobe Maven Repository - http://www.cqblueprints.com/xwiki/bin/view/Blue+Prints/Connecting+to+the+Adobe+Maven+Repository
-
-
-==========================
-FOR FURTHER CQ INFORMATION
-==========================
-
-For more information on recommended best practices for working with Adobe CQ:
-
-* visit the CQ Blueprints website at http://www.cqblueprints.com
-
-* send an email to info@headwire.com
+1. Update maven configuration to connect to CQ blueprints and Adobe Public maven repositories.
+2. Update the parent level pom.xml with your instance specific information, such as cq.port, cq.host, cq.user, cq.password etc
+3. Use the following maven command to build the project:
+mvn clean install -P auto-deploy
+4. The first build of your project will fail. This is due to a "maven vault plugin" issue which expects "/apps/<project>/install" folder's existence for installing the osgi bundles.
+To resolve this issue, in CRXDELite navigate to /apps/<project> and create a nt:folder named install and save.
+5. Again build using the command in step 3. Your build run through smoothly. In case it does not add the -X switch to the command to dig the cause.
