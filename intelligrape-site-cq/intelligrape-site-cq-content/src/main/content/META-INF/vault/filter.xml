@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspaceFilter version="1.0">
+    <filter root="/content/intelligrape-site-cq"/>
+    <filter root="/content/dam/intelligrape-site-cq">
+        <!-- exclude pattern=".*/renditions.*"/ -->
+    </filter>
+    <filter root="/etc/designs/intelligrape-site-cq/jcr:content">
+        <include pattern="/etc/designs/intelligrape-site-cq/jcr:content(/.*)+"/>
+    </filter>
+</workspaceFilter>

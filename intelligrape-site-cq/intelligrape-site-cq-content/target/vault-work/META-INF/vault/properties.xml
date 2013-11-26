@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>com.intelligrape.test - intelligrape-site-cq-content</comment>
+<entry key="createdBy">ankit</entry>
+<entry key="name">intelligrape-site-cq-content</entry>
+<entry key="created">2013-11-19T15:29:43.442+0530</entry>
+<entry key="groupId">com.intelligrape.test</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">blahblah</entry>
+<entry key="description">A CQ content package containing the initial content used during the develop phase. By allowing developers to
+        share content this way, it allows for easier testing during early development.
+
+        Eventually, once the project progresses to QA and/or Production, this module should be deleted. At that point
+        development environments should be seeded with content created in QA and/or Production by creating content
+        packages in those environments.
+
+        During development, the files in this module should be sync'd to your CQ instance using the FileVault command
+        line tool available with CQ. There is also a plugin for Eclipse called "vaultclipse" that can be used instead
+        of the command line tool.</entry>
+<entry key="artifactId">intelligrape-site-cq-content</entry>
+<entry key="path">/etc/packages/blahblah/intelligrape-site-cq-content.zip</entry>
+</properties>
