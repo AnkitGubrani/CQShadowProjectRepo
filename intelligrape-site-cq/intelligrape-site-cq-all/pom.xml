@@ -53,6 +53,12 @@
             <version>5.5.1</version>
             <type>zip</type>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-content</artifactId>
+            <version>1.2.0</version>
+            <type>content-package</type>
+        </dependency>
     </dependencies>
 
     <build>
@@ -95,7 +101,13 @@
                                     <groupId>com.cqblueprints.taglib</groupId>
                                     <artifactId>cqblueprints-taglib-all</artifactId>
                                     <filter>true</filter>
+                                    <subPackage>
+                                        <groupId>com.adobe.acs</groupId>
+                                        <artifactId>acs-aem-commons-content</artifactId>
+                                        <filter>true</filter>
+                                    </subPackage>
                                 </subPackage>
+                                
                             </subPackages>
                         </configuration>
                     </execution>
