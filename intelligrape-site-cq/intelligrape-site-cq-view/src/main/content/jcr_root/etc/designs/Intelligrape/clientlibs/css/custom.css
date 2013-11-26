@@ -1,0 +1,40 @@
+
+.colctrl-2c,
+.colctrl-2crc,
+.colctrl-3c {
+    overflow: hidden;
+}
+
+.colctrl-2c-c0 {
+    float: left;
+    width: 453px;
+}
+.colctrl-2c-c1 {
+    float: right;
+    width: 453px;
+}
+
+.colctrl-2crc-c0,
+.colctrl-2crc-c1 {
+    float: left;
+    min-width: 100px;
+}
+.colctrl-2crc-c0 {
+    margin-right: 10px;
+}
+
+.colctrl-3c-c0 {
+    float: left;
+    display: inline;
+    width: 302px;
+    margin-right: 10px;
+}
+.colctrl-3c-c1 {
+    float: left;
+    width: 302px;
+    margin-right: 10px;
+}
+.colctrl-3c-c2 {
+    float: left;
+    width: 302px;
+}

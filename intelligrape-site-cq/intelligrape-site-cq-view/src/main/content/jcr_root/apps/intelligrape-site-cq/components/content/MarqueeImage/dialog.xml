@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Effect">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <Action_x0020_Type
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Select the Effect"
+                        fieldLabel="Select the Effect"
+                        name="./actionType"
+                        type="select"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                            selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <marquee
+                                jcr:primaryType="nt:unstructured"
+                                text="Marquee"
+                                value="marq"/>
+                            <carousel
+                                jcr:primaryType="nt:unstructured"
+                                text="Image Carousel"
+                                value="imageCar"/>
+                        </options>
+                    </Action_x0020_Type>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

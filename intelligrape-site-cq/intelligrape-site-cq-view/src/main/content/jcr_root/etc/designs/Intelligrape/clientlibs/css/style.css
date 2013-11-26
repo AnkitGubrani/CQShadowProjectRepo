@@ -1,0 +1,590 @@
+/*----------------------------------------*/
+/*----- 1.1 General styles -----*/
+/*----------------------------------------*/
+h1, h2, h3, h4, h5, h6{margin-top:0px}
+ul, ol{padding:0;margin:0;list-style-type:none}
+ul li, ol li{line-height:inherit}
+body{background:url(../images/patterns/pattern1.jpg) repeat #fff;background:url(../images/gray-bg.png) 0 0 repeat;font-size:13px;color:#595858;font-weight:400;line-height:1.5em}
+body.home{background:url(../images/patterns/pattern1.jpg) repeat #fff}
+img, embed, object, video{max-width:100%;height:auto}
+video{width:100% !important;height:auto !important}
+iframe{border:none !important}
+audio{margin-bottom:20px}
+/*----------------------------------------*/
+/*----- 1.2 Typography -----*/
+/*----------------------------------------*/
+/*only font families are specified here - font sizes and weights are in respective section*/
+body, h1, h2, h3, h4, h5, h6, .mybtn, .mybtn-black, .mybtn-arrow, label, input, button, select, textarea, input[type="text"], .submit, .search-submit, .sub-submit, .ddsmoothmenu ul li a{font-family:'Raleway', Arial, Helvetica, sans-serif}
+blockquote p{font-family:Georgia, "Times New Roman", Times, serif}
+/*Other typography*/
+h1, h2, h3, h4, h5, h6{color:#343434;font-weight:600;line-height:1.3em;font-style:normal;margin-bottom:15px}
+h1{font-size:26px}
+h2{font-size:22px}
+h3{font-size:18px}
+h4{font-size:14px}
+h5{font-size:13px;margin-bottom:5px}
+h6{font-size:12px;margin-bottom:5px}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color:#343434}
+a{color:#F8981D;text-decoration:none;cursor:pointer;font-style:normal;outline:none;-moz-transition:all 0.3s ease;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease}
+a:hover{color:#808080;text-decoration:none}
+.color{color:#F8981D!important;font-size:inherit !important;font-weight:inherit !important;text-transform:inherit !important;display:inline !important}
+/*text styles*/
+.text-center{text-align:center}
+.text-vbig{font-size:90px !important;font-weight:600;line-height:1em}
+.text-big{font-size:14px}
+.text-small{font-size:11px !important;letter-spacing:1px;text-transform:uppercase}
+.text-vsmall{font-size:10px}
+.heading-icon{font-size:14px;color:#343434;line-height:24px}
+.heading-icon img{margin-right:10px;float:left}
+/*----------------------------------------*/
+/*----- 1.3 Button styles -----*/
+/*----------------------------------------*/
+.mybtn, .mybtn-black{background:#F8981D;padding:5px 20px 5px 20px;margin-top:10px;font-size:10px;color:#fff !important;line-height:10px;font-weight:400;text-transform:uppercase;letter-spacing:2px;width:auto;height:auto;border:none;border-radius:30px;-moz-border-radius:30px;-webkit-border-radius:30px;-moz-box-shadow:0 9px 0 0 rgba(255, 255, 255, .12) inset;-webkit-box-shadow:0 9px 0 0 rgba(255, 255, 255, .12) inset;box-shadow:0 9px 0 0 rgba(255, 255, 255, .12) inset;display:inline-block;cursor:pointer;outline:none}
+.mybtn-black, .mybtn:hover{background:#484848}
+.mybtn-arrow{background:#cacaca;/* for non-css3 browsers */  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#cacaca');/* for IE */
+background:-webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#cacaca));/* for webkit browsers */ background:-moz-linear-gradient(top, #e8e8e8, #cacaca);/* for firefox 3.6+ */ background:-o-linear-gradient(top, #e8e8e8, #cacaca);padding:15px 20px 15px 20px;margin-top:10px;font-size:18px;color:#343434 !important;text-shadow:0px 1px 0px #fff;line-height:18px;font-weight:400;text-transform:uppercase;letter-spacing:1px;width:auto;height:auto;border:none;border-radius:30px;-moz-border-radius:30px;-webkit-border-radius:30px;-moz-box-shadow:0 1px 0 0 rgba(0, 0, 0, .3), 0 24px 0 0 rgba(255, 255, 255, .4) inset;-webkit-box-shadow:0 1px 0 0 rgba(0, 0, 0, .3), 0 24px 0 0 rgba(255, 255, 255, .4) inset;box-shadow:0 1px 0 0 rgba(0, 0, 0, .3), 0 24px 0 0 rgba(255, 255, 255, .4) inset;display:inline-block;cursor:pointer;outline:none}
+.mybtn-arrow span{background:url(../images/cta-btn-arr.png) no-repeat right 0;margin:0;padding-right:30px}
+.mybtn-arrow:hover{background:#e8e8e8;/* for non-css3 browsers */  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#e8e8e8');/* for IE */
+background:-webkit-gradient(linear, left top, left bottom, from(#cacaca), to(#e8e8e8));/* for webkit browsers */ background:-moz-linear-gradient(top, #cacaca, #e8e8e8);/* for firefox 3.6+ */ background:-o-linear-gradient(top, #cacaca, #e8e8e8)}
+/*----------------------------------------*/
+/*----- 1.4 List styles -----*/
+/*----------------------------------------*/
+.list-checkmark li, .list-arrow li, .list-inline li, .list-unstyled li{background:none;list-style-type:none;display:block}
+/*checkmark list*/
+.list-checkmark li{background:url(../images/bullet-checkmark.png) no-repeat 0 4px;padding-left:30px;margin-bottom:10px}
+/*checkmark list*/
+.list-arrow li{background:url(../images/bullet-arr.png) no-repeat 0 1px;padding-left:20px;margin-bottom:9px}
+/*unstyled list*/
+.list-unstyled li{margin-bottom:20px;float:none}
+/*unordered list*/
+.list-unordered{list-style-type:disc;list-style-position:inside}
+.list-unordered li{margin-bottom:5px}
+.list-unordered li ul{list-style-type:circle;margin-left:25px}
+/*ordered list*/
+.list-ordered{list-style-type:decimal;list-style-position:inside}
+.list-ordered li{margin-bottom:5px}
+.list-ordered li ul{list-style-type:lower-roman;margin-left:25px}
+/*----- list-dot -----*/
+.list-dot{margin-bottom:20px !important;display:inline-block}
+.list-dot li{background:url(../images/dot.png) no-repeat right;font-size:11px;padding-right:10px;margin:0px 7px 0px 0px !important;float:left !important;width:auto !important}
+.list-dot li:last-child{padding-right:0px;margin-right:0px;background:none}
+/*----------------------------------------*/
+/*----- 1.5 Dividers and Spacers -----*/
+/*----------------------------------------*/
+.divider, .divider-arrow, .divider-greyarrow{width:100%;display:inline-block;clear:both}
+.divider{background:url(../images/divider-diagonal.png) repeat-x;height:3px;margin:20px auto}
+.divider-arrow{background:url(../images/feature-divider-arr.png) no-repeat center bottom;height:5px;border-top:1px solid #fff;margin:10px auto}
+.divider-greyarrow{background:url(../images/ptable-divider-arr.png) no-repeat center bottom;height:5px;border-top:1px solid #dedede;margin:20px 0px 20px 0px}
+/*use suitable height spacer for vertical spacing*/
+.spacer-10px, .spacer-20px, .spacer-30px{width:100%;height:10px;display:block;clear:both}
+.spacer-20px{height:20px !important}
+.spacer-30px{height:30px !important}
+/*----------------------------------------*/
+/*----- 1.6 Image styles -----*/
+/*----------------------------------------*/
+.img-left{float:left;margin-right:20px}
+.img-right{float:right;margin-left:20px}
+.frame, .frame-icon{background:#fff;border:1px solid #dedede;padding:9px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;position:relative}
+.frame-icon{margin-bottom:30px}
+.list-3col .frame img, .list-4col .frame img, .list-6col .frame img, .list-3col .frame-icon img, .list-4col .frame-icon img, .list-6col .frame-icon img{margin-bottom:0}
+.icon-bg{background:#F8981D;width:54px;height:54px;position:absolute;left:50%;top:100%;margin-left:-27px;margin-top:-35px;border-radius:54px;-moz-border-radius:54px;-webkit-border-radius:54px;margin-bottom:30px}
+.icon-bg img{float:left}
+/*----------------------------------------*/
+/*----- 1.7 Breadcrumb -----*/
+/*----------------------------------------*/
+.breadcrumb{padding:5px 0px 0px 0px;list-style:none;background-color:transparent;float:left;font-size:12px}
+.breadcrumb li{text-shadow:none}
+.breadcrumb span{padding:0 3px;color:#85858D}
+.breadcrumb a{color:#85858D}
+.breadcrumb .active{color:#F8981D}
+/*----------------------------------------*/
+/*----- 1.8 Pagination -----*/
+/*----------------------------------------*/
+.pagination{margin-top:30px !important}
+/*----------------------------------------*/
+/*----- 1.9 Accordion -----*/
+/*----------------------------------------*/
+.accordion-heading a{background:url(../images/accord-plus.png) no-repeat left center;padding-left:40px !important;margin-left:10px}
+.accordion-heading.in_head a{background:url(../images/accord-minus.png) left center no-repeat}
+/*----------------------------------------*/
+/*----- 1.10 Blockquote -----*/
+/*----------------------------------------*/
+blockquote{border-left:4px solid #F8981D}
+blockquote p{font-size:12px;color:#F8981D;font-style:italic;line-height:1.6em;margin:0}
+blockquote.pull-right{border-right:4px solid #F8981D}
+/*============================================================*/
+/*---------- 2. TEMPLATE STRUCTURE ----------*/
+/*============================================================*/
+/*----------------------------------------*/
+/*----- 2.1 Commons  -----*/
+/*----------------------------------------*/
+.row-general{padding:30px 0px}
+/*----- colored row -----*/
+.row-colortoned{background:#6877c0;padding:30px 0px;color:#fff}
+.row-colortoned h1, .row-colortoned h2, .row-colortoned h3, .row-colortoned h4, .row-colortoned h5, .row-colortoned h6{color:#fff}
+/*----- grey toned row -----*/
+.row-greytoned{background:#e1e9eb;padding:30px 0px}
+/*----- main content & sidebar -----*/
+#sidebar-left{padding-right:30px;margin-right:10px;border-right:1px solid #dedede}
+#sidebar-right{padding-left:30px;margin-left:10px;border-left:1px solid #dedede}
+/*----- content-intro -----*/
+#content-intro{background:#bdc3c5;padding:20px 0px}
+#content-intro h1{float:left;color:#fff;margin:0}
+/*----- 3, 4, 6 column list -----*/
+.list-3col, .list-4col, .list-6col{margin-left:-20px}
+.list-3col li{margin-left:20px;list-style-type:none;float:left;font-size:14px}
+.list-4col li{width:220px;margin-left:20px;list-style-type:none;float:left}
+.list-6col li{width:140px;margin-left:20px;list-style-type:none;float:left}
+.list-3col img, .list-4col img, .list-6col img{margin-bottom:10px}
+/*----- % based half -----*/
+.half{width:45%;float:left}
+.half-last{width:45%;margin-left:10%;float:left}
+/*----- box -----*/
+.box{background:#fff;border:1px solid #dedede;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;padding:20px}
+.review{background:url(../images/icons/icon-quote.png) no-repeat right bottom}
+.info{background:url(../images/icons/icon-info.png) no-repeat right bottom}
+/*----- box-styled (testimonal) -----*/
+.box-styled{background:#fff;border:1px solid #dedede;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;min-height:233px}
+.box-head{background:#e1e9eb;padding:15px}
+.box-head h4{margin:0px;color:#353535;float:left}
+.box-head h4 span{font-size:11px;color:#F8981D;display:block}
+.box-body{padding:15px;font-size:13px}
+.photo{background:#fff;width:50px;height:50px;border:3px solid #fff;border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px;display:inline-block;float:right}
+.photo img{border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px}
+/*----------------------------------------*/
+/*----- 2.2 Header  -----*/
+/*----------------------------------------*/
+/*----- header -----*/
+#header{background:#fff;border-bottom:1px solid #1c1c1c;position:relative;z-index:9990}
+/*----- header-inner -----*/
+#header-inner{padding:15px 0px}
+/*----- header-btm -----*/
+#header-btm{font-size:10px;color:#000;text-transform:uppercase;font-weight:600;border-top:1px solid #5a5a5a;border-bottom: 1px solid #131111}
+#header-btm p{margin-bottom:0px;float:left;line-height:32px}
+#header-btm ul{float:right}
+#header-btm ul li{padding-left:25px;background:none;list-style-type:none;display:inline !important;float:left}
+#header-btm img{background:#464646;margin-right:10px;border:1px solid #5a5a5a;border-width:0px 1px 0px 1px;float:left}
+#header-btm a{color:#000}
+/*----------------------------------------*/
+/*----- 2.3 Content  -----*/
+/*----------------------------------------*/
+/*----- infographic  -----*/
+.infographic h1{margin:15px 0px 5px 0px;font-family:Arial, Helvetica, sans-serif;font-size:48px;color:#F8981D;font-weight:normal;line-height:1em}
+/*----- feature styles -----*/
+/*center aligned*/
+.features-centered{text-align:center}
+.features-centered .text-small{margin:0}
+/*image to left*/
+.feature-left-img img{margin:35px 20px 20px 0px;float:left}
+.feature-left-img li{margin-bottom:30px}
+/*only image at center*/
+.feature-center-img{text-align:center}
+.feature-center-img h1, .feature-center-img h2, .feature-center-img h3, .feature-center-img h4, .feature-center-img h5, .feature-center-img p{text-align:left}
+/*----- twitter -----*/
+.heading-twitter{background:url(../images/icons/icon-chirp-chirp.png) left no-repeat;padding-left:68px;margin-bottom:20px;font-size:14px;color:#353535;font-weight:600;line-height:40px;display:inline-block}
+.heading-twitter a{font-size:10px;font-weight:400;letter-spacing:2px;text-transform:uppercase}
+/*----- post-type and team -----*/
+.post-type{text-align:center}
+.post-type h3 span, .team h3 span{margin-top:5px;font-size:13px;font-weight:normal;display:block}
+.team .social{margin-top:20px}
+.team .social li{width:auto;margin-left:0px !important;margin-right:1px !important}
+.team .social li img{margin:0}
+/*----------------------------------------*/
+/*----- 2.4 portfolio -----*/
+/*----------------------------------------*/
+.filter_nav{margin-bottom:20px;display:inline-block}
+.filter_nav li{float:left}
+.filter_nav li a{padding:5px 20px 5px 20px;margin-right:5px;font-size:10px;color:#343434;line-height:10px;font-weight:600;text-transform:uppercase;letter-spacing:2px;display:inline-block;cursor:pointer;outline:none}
+.filter_nav li a:hover, .filter_nav li a.active{background:#F8981D;padding:5px 20px 5px 20px;font-size:10px;color:#fff !important;line-height:10px;text-transform:uppercase;letter-spacing:2px;border-radius:30px;-moz-border-radius:30px;-webkit-border-radius:30px;-moz-box-shadow:0 9px 0 0 rgba(255, 255, 255, .12) inset;-webkit-box-shadow:0 9px 0 0 rgba(255, 255, 255, .12) inset;box-shadow:0 9px 0 0 rgba(255, 255, 255, .12) inset}
+/*3 & 4 column portfolio*/
+.portfolio_3column, .portfolio_4column{margin-left:-20px}
+.portfolio_3column img, .portfolio_4column img{width:100%}
+.portfolio_3column li, .portfolio_4column li{height:auto;margin:0px 0px 0px 20px;list-style-type:none;position:relative;float:left}
+.portfolio_3column li{width:300px}
+.portfolio_4column li{width:220px}
+.portfolio_3column li h4, .portfolio_4column li h4{margin-bottom:2px}
+/*folio-thumb*/
+.folio-thumb{background:#fff;padding:9px;margin-bottom:10px;border:1px solid #dedede;position:relative;overflow:visible;height:auto;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+.folio-thumb .zoom, .folio-thumb .link{background:url(../images/zoom.png) 0 0 no-repeat transparent;width:40px;height:40px;position:absolute;left:40%;top:50%;margin-top:-20px;margin-left:-20px;outline:none;filter:alpha(opacity=50);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";-moz-opacity:0.5;-khtml-opacity:0.5;opacity:0.5}
+.folio-thumb .link{background:url(../images/link.png) 0 0 no-repeat transparent;position:absolute;right:40%;left:auto;margin-right:-20px}
+/*isotope*/
+.isotope-item{z-index:2}
+.isotope-hidden.isotope-item{pointer-events:none;z-index:1}
+/*----------------------------------------*/
+/*----- 2.5 pricing -----*/
+/*----------------------------------------*/
+.pricing{width:100%;margin-top:50px;text-align:center;display:inline-block}
+.pricing.two-col .price-column{width:49.7%}
+.pricing.three-col .price-column{width:33.1%}
+.pricing.four-col .price-column{width:24.8%}
+.pricing.five-col .price-column{width:19.8%}
+.price-column{background:#fff;height:100%;font-size:13px;border:1px solid #dedede;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;display:inline-block;position:static;overflow:hidden;float:left}
+/*focused column*/
+.price-column.focused{background:#eaeaea;height:auto;margin-top:-33px;padding-bottom:28px;vertical-align:middle;overflow:hidden;border-left:0px;border-right:0px;box-shadow:1px 1px 10px rgba(0, 0, 0, 0.5);-webkit-box-shadow:1px 1px 10px rgba(0, 0, 0, 0.5);-moz-box-shadow:1px 1px 10px rgba(0, 0, 0, 0.5);-o-box-shadow:1px 1px 10px rgba(0, 0, 0, 0.5);-ms-box-shadow:1px 1px 10px rgba(0, 0, 0, 0.5);-moz-transform:scale(1.00)!important;-ms-transform:scale(1.00)!important;-webkit-transform:scale(1.00) !important;-o-transform:scale(1.00)!important;transform:scale(1.00)!important;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-webkit-transition:all .4s ease-in-out;-moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;-ms-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.price-column.focused:hover{box-shadow:1px 1px 15px rgba(0, 0, 0, 0.5);-webkit-box-shadow:1px 1px 15px rgba(0, 0, 0, 0.5);-moz-box-shadow:1px 1px 15px rgba(0, 0, 0, 0.5);-o-box-shadow:1px 1px 15px rgba(0, 0, 0, 0.5);-ms-box-shadow:1px 1px 15px rgba(0, 0, 0, 0.5)}
+.table-slug{background:#9d9d9d;padding:10px;color:#efd70a;font-size:14px;line-height:1em;display:block}
+/*table heading*/
+.table-th{margin:30px 20px 0px 20px;font-family:Georgia, "Times New Roman", Times, serif;color:#808080;font-style:italic;text-align:center;font-weight:bold}
+.table-th h3{margin-bottom:5px;font-size:16px;line-height:16px}
+.circle{background:#F8981D;width:90px;height:50px;padding:20px 0px;margin:20px auto 0px auto;border-radius:90px;-moz-border-radius:90px;-webkit-border-radius:90px;color:#fff;font-weight:normal;text-align:center}
+.circle span{font-size:24px;margin-bottom:3px;font-weight:bold;display:block}
+/*table content*/
+.table-content{padding:0px 20px 35px 20px}
+.table-content .mybtn{margin-top:20px}
+.border-rightnone{border-right:0px}
+/*----------------------------------------*/
+/*----- 2.6 Blog  -----*/
+/*----------------------------------------*/
+.tags li{background:url(../images/dot.png) no-repeat left;padding-left:10px;margin-right:7px;font-size:10px !important;letter-spacing:1px;text-transform:uppercase;list-style-type:none;float:left}
+.tags li:first-child{padding-left:0px;background:none}
+/*----------------------------------------*/
+/*----- 2.7 Contact -----*/
+/*----------------------------------------*/
+/*address*/
+.addrs{background:url(../images/world-map.png) no-repeat center top;min-height:120px}
+.addrs table th{padding-right:20px;font-size:13px;color:#343434;text-align:right;font-weight:400;vertical-align:top}
+.addrs table td{padding-bottom:10px}
+/*----------------------------------------*/
+/*----- 2.8 Footer  -----*/
+/*----------------------------------------*/
+#footer{background:#000 url(../images/footer-crytal-repeat.png) repeat-x 0 bottom;color:#e1e1e1;line-height:1.4em}
+#footer-middle{background:url(../images/footer-crytal.png) no-repeat right bottom}
+#footer-inner{padding:30px 0 0;border-top:4px solid #fff}
+#footer h4{color:#fff !important}
+/*----- social -----*/
+.social li{background:#353535;margin-left:1px;list-style-type:none;-moz-transition:all 0.3s ease;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;display:inline-block;float:left}
+.social li img{float:left}
+.social li:hover{background:#F8981D}
+/*----- flickr -----*/
+.flickr{margin-left:-11px}
+.flickr img{background:#343434;width:56px;height:56px;padding:4px;margin:0px 0px 11px 11px;border:1px solid #151515;float:left}
+/*----------------------------------------*/
+/*----- 2.9 Forms -----*/
+/*----------------------------------------*/
+/*----- Common properties for contact, support, search, login form -----*/
+form{margin:0;padding:0;z-index:0}
+form p{margin-bottom:20px;padding-bottom:0px}
+/*errors*/
+form label.error{color:#b94a48;font-size:10px;margin-top:3px}
+#subform label.error, #searchform label.error{display:none !important}
+form input.error, form textarea.error, form password.error{border-color:#b94a48 !important;box-shadow:none}
+/*label and inputs*/
+label{font-size:12px;color:#343434;font-weight:600;line-height:1em}
+input[type="text"], input[type="password"], select, textarea{background-color:#ffffff;width:95%;height:23px;padding:5px 5px 7px;margin-bottom:0px;font-size:12px;color:#999;line-height:12px;display:inline-block;border:1px solid #dedede;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;box-shadow:none;-webkit-transition:border linear 0.2s;-moz-transition:border linear 0.2s;-ms-transition:border linear 0.2s;-o-transition:border linear 0.2s;transition:border linear 0.2s}
+textarea{height:auto}
+select{height:35px;width:97%}
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus{box-shadow:none;border-color:rgba(82, 168, 236, 0.8) !important}
+:-moz-placeholder{font-size:12px;color:#999}
+:-ms-input-placeholder{font-size:12px;color:#999}
+::-webkit-input-placeholder{font-size:12px;color:#999}
+/*results*/
+#result, #subresult, #supportresult{width:100%;display:block}
+/*submit button*/
+.submit{background:#F8981D;padding:12px 20px 12px 20px;font-size:10px;color:#fff !important;line-height:10px;font-weight:400;text-transform:uppercase;letter-spacing:2px;width:auto;height:auto;border:none;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-moz-box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;-webkit-box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;display:inline-block;cursor:pointer;outline:none}
+/*----- subscribe form ------*/
+#subform input[type="text"]{width:150px;background:#151515;border:1px solid #151515;-webkit-border-radius:3px 0px 0px 3px;-moz-border-radius:3px 0px 0px 3px;border-radius:3px 0px 0px 3px;float:left}
+.sub-submit{background:#343434;padding:11px 10px 9px 10px;font-size:13px;line-height:17px;color:#151515;font-weight:600;border:none;-webkit-border-radius:0px 3px 3px 0px;-moz-border-radius:0px 3px 3px 0px;border-radius:0px 3px 3px 0px;display:inline-block}
+/*search form*/
+#searchform{margin-bottom:20px}
+#searchform p{margin-bottom:0px}
+#searchform input[type="text"]{width:170px;-webkit-border-radius:3px 0px 0px 3px;-moz-border-radius:3px 0px 0px 3px;border-radius:3px 0px 0px 3px;float:left}
+.search-submit{background:#F8981D;padding:9px 10px 9px 10px;font-size:13px;color:#fff;line-height:13px;font-weight:600;border:none;-webkit-border-radius:0px 3px 3px 0px;-moz-border-radius:0px 3px 3px 0px;border-radius:0px 3px 3px 0px;-moz-box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;-webkit-box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;display:inline-block}
+/*----------------------------------------*/
+/*----- 2.10 Tabs -----*/
+/*----------------------------------------*/
+.nav-tabs > li > a{background:#dedede;color:#343434}
+.nav-tabs > li > a:hover{background:#dedede;border-color:#dedede}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover{background:#F8981D;border:1px solid #F8981D;border-bottom-color:transparent;color:#fff;-moz-box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;-webkit-box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;box-shadow:0 17px 0 0 rgba(255, 255, 255, .12) inset;outline:none}
+.nav-tabs i{margin-right:5px}
+/*----- Left Tabs -----*/
+.tabs-left > .nav-tabs{margin-right:19px;border-right:1px solid #dedede;float:left}
+.tabs-left > .nav-tabs > li > a{background:transparent;min-width:195px;width:195px;margin-right:-1px;margin-bottom:0px;color:#808080;outline:none}
+.tabs-left > .nav-tabs > li > a:hover{border-color:transparent;background:transparent}
+.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover{background:#ececec;/* for non-css3 browsers */  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#ececec');/* for IE */
+background:-webkit-gradient(linear, left top, left bottom, from(#fff), to(#ececec));/* for webkit browsers */ background:-moz-linear-gradient(top, #fff, #ececec);/* for firefox 3.6+ */ background:-o-linear-gradient(top, #fff, #ececec);border-color:#dedede transparent #dedede #dedede;*border-right-color:transparent !important;color:#343434}
+/*----------------------------------------*/
+/*----- 2.11 Countdown -----*/
+/*----------------------------------------*/
+#countdown-wrapper{position:relative;left:50%;float:left}
+#defaultCountdown{position:relative;left:-50%;margin-left:-20px;margin-top:20px;color:#F8981D;font-weight:600;display:inline-block}
+#d, #h, #m, #s{min-width:45px;/*to avoid fluctuations*/ padding-left:20px;padding-right:5px;font-size:35px;float:left}
+#d_name, #h_name, #m_name, #s_name{font-size:18px;float:left}
+/*----------------------------------------*/
+/*----- 2.12 Menu / Navigation -----*/
+/*----------------------------------------*/
+.ddsmoothmenu{background:transparent scroll;width:auto;padding:0;margin:0;float:right;padding:20px 0 0}
+.ddsmoothmenu ul{padding:0;margin:0;list-style-type:none;background:transparent;box-shadow:none;z-index:100}
+.ddsmoothmenu ul li{padding:0;margin:0;border:none;position:relative;display:inline;float:left}
+.ddsmoothmenu ul li a{padding-left:20px;padding-bottom:15px;font-size:13px;color:#000;font-weight:600;line-height:1em;text-transform:uppercase;text-decoration:none;outline:none;background:transparent;-moz-transition:all 0.3s ease;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;display:block}
+.ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover{color:#f8981d}
+* html .ddsmoothmenu ul li a{/*IE6 hack to get sub menu links to behave correctly*/ display:inline-block;color:#fff}
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul{background:#f2f2f2;position:absolute;left:0;display:none;visibility:hidden;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-moz-box-shadow:0 1px 0 0 rgba(0, 0, 0, .2);-webkit-box-shadow:0 1px 0 0 rgba(0, 0, 0, .2);box-shadow:0 1px 0 0 rgba(0, 0, 0, .2)}
+.ddsmoothmenu ul li ul li{background:url(../images/nav-item-divider.jpg) repeat-x bottom;padding:12px 10px 13px 20px;box-shadow:none !important;display:list-item;float:none}
+.ddsmoothmenu ul li ul li:last-child{background:none}
+.ddsmoothmenu ul li ul li a{width:160px;/*width of sub menus*/ margin:0;line-height:1em;font-size:12px !important;padding:0;text-transform:none;box-shadow:none !important;color:#606060}
+.ddsmoothmenu ul li ul li a:hover, .ddsmoothmenu ul li ul li a.selected{color:#F8981D!important}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{top:0;margin-left:5px}
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height:1%}
+.downarrowclass, .rightarrowclass{display:none}
+/*Menu select - for responsive*/
+.ddsmoothmenu select{background:#343434;width:100%;height:auto;padding:5px 10px;margin:0 auto;border:1px solid #5a5a5a;font-size:12px;color:#808080 !important;cursor:pointer !important;outline:none;display:none}
+
+/*============================================================*/
+/*---------- 3. Media queries ----------*/
+/*============================================================*/
+/*----------------------------------------*/
+/*----- 3.1 Mobile (Portrait) / Design for a width of 320px -----*/
+/*----------------------------------------*/
+
+@media only screen and (max-width:767px){body{padding:0}
+.container{margin-left:20px;margin-right:20px}
+#main-content{margin-bottom:20px}
+#sidebar-left{float:none;padding-right:0px;margin-right:0px;border-left:0px solid #dedede;margin-bottom:20px}
+#sidebar-right{float:none;padding-left:0px;margin-left:0px;border-left:0px solid #dedede}
+.logo{text-align:center}
+#header-btm p{margin-top:0px}
+#header-btm img{display:none}
+.list-3col, .list-4col, .list-6col{margin-left:0}
+.list-3col li, .list-4col li, .list-6col li{width:100%;margin-left:0px;margin-bottom:30px !important;display:block}
+.half{width:100%}
+.half-last{width:100%;margin-left:0%}
+.mybtn, .mybtn-black, .mybtn-arrow{margin-bottom:10px}
+/*menu*/
+.ddsmoothmenu{float:left;width:100%}
+.ddsmoothmenu ul{display:none}
+.ddsmoothmenu select{width:100% !important;margin-top:20px;float:left !important;display:block}
+/*home page slider*/
+.image-text-slider img{margin-top:10px;margin-bottom:10px}
+.image-text-slider h1{font-size:20px}
+/*tabs*/
+.nav-tabs{border:none}
+.nav-tabs > li > a{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin-bottom:5px;margin-left:2px}
+/*left-tabs*/
+.tabs-left > .nav-tabs{margin-right:0px;border-right:0px solid #dedede;float:none !important;display:block}
+.tabs-left > .nav-tabs > li > a{background:transparent;min-width:280px;width:280px;margin-right:0px;margin-bottom:0px;text-align:center;padding:10px 0px}
+.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover{border-color:#dedede #dedede #dedede #dedede !important;*border-right-color:#dedede !important;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
+.tab-content{display:block;float:none;width:100%}
+/*pricing*/
+.pricing{margin-top:0px}
+.pricing.two-col .price-column, .pricing.three-col .price-column, .pricing.four-col .price-column, .pricing.five-col .price-column{width:99.8%;border:1px solid #dedede;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;-ms-border-radius:4px;-o-border-radius:4px;margin-bottom:20px}
+.price-column.focused{margin-top:0px}
+/*portfolio*/
+.portfolio_3column, .portfolio_4column{margin-left:0px}
+.portfolio_3column li, .portfolio_4column li{width:100%;margin:0}
+.modal.fade.in{top:15%}
+.modal-body input{z-index:9999}}
+
+/*----------------------------------------*/
+/*----- 3.2 Mobile (Landscape) / Design for a width of 480px -----*/
+/*----------------------------------------*/
+@media only screen and (min-width:480px) and (max-width:767px){/*All are same as Portrait*/}
+
+/*----------------------------------------*/
+/*----- 3.3 Tablet (Portrait) / Design for a width of 768px -----*/
+/*----------------------------------------*/
+@media only screen and (min-width:768px) and (max-width:959px){.list-3col li{width:228px}
+.list-4col li{width:166px}
+.list-6col li{width:104px}
+.portfolio_3column li{width:228px}
+.portfolio_4column li{width:166px}
+.infographic h1{font-size:30px}
+/*forms*/
+#subform input[type="text"]{width:100px}
+#searchform input[type="text"]{width:110px}
+/*left-tabs*/
+.tabs-left > .nav-tabs > li > a{min-width:140px;width:140px;font-size:12px}
+/*tabs*/
+.nav-tabs{border:none}
+.nav-tabs > li > a{-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin-bottom:5px;margin-left:2px}}
+
+/*============================================================*/
+/*---------- 4. BROWSER FIXES ----------*/
+/*============================================================*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+.full-width-heading h1{ font-size:35px !important; letter-spacing:1px;line-height:35px !important}}
+@media \0screen{#searchform input[type="text"]{width:170px}
+#header-btm p{margin-top:0px}
+#header-btm img{display:none}}
+.social-post{float:right;display:block;margin-top:20px}
+/*list-comments*/
+.list-comments{list-style:none}
+.list-comments li ul{padding:0 0 0 50px;list-style:none;margin:0}
+.list-comments .avatar{margin-right:20px;margin-bottom:10px;float:left !important}
+.list-comments .box{float:left;margin-bottom:30px}
+.content-top{margin-top:30px;margin-bottom:19px;position:relative}
+
+/*css add on 8/5/2013*/
+.hide{display:none}
+.section_area{padding:35px 0}
+.dashboard{background-color:#494949}
+.dashboard h3{color:#fff;padding-top:0;font-size:24px;line-height:33px}
+.dashboard a{color:#f4f4f4}
+.dashboard a:hover{color:#f4f4f4}
+.dashboard h3 span{color:#fff;font-size:13px;background-color:#2b2b2b;padding:6px 15px;margin:0 0 0 5%;-webkit-transition:0.3s all ease;-moz-transition:0.3s all ease;-o-transition:0.3s all ease;-ms-transition:0.3s all ease;transition:0.3s all ease}
+.dashboard h3 span:hover{background-color:#dbc404;cursor:pointer;-webkit-transition:0.3s all ease;-moz-transition:0.3s all ease;-o-transition:0.3s all ease;-ms-transition:0.3s all ease;transition:0.3s all ease}
+.dashboard h3 span a{color:#fff}
+.dashboard .twitter{list-style:none;padding:12px 3%;margin:0}
+.dashboard .twitter li{color:#ccc;padding-left:10%;margin:18px 0}
+.dashboard .twitter li h6{border-bottom:1px solid #666;margin:0 0 10px 0;line-height:23px;padding:0;color:#f4f4f4}
+.dashboard .post{list-style:none;padding:12px 3%;margin:0;border:0}
+.dashboard .post li{color:#ccc;margin:10px 0;position:relative;margin-bottom:5px;overflow:auto}
+.dashboard .post li h6{border-bottom:1px solid #666;margin:0 0 10px 0;padding:0;color:#f4f4f4;line-height:30px}
+.dashboard .post li h6 span{float:right;font-size:12px}
+.dashboard .post .date{float:left;font-size:17px;font-weight:bold;text-align:center;background-color:#dbc404;color:#fff;padding:5px 0;width:15%}
+.dashboard .post .info_post{width:80%;display:inline-block;margin-left:5%}
+.dashboard .item_footer{background-color:#2b2b2b;position:relative;min-height:248px}
+.dashboard .item_footer p{color:#ccc;padding:10px 5%;margin:0}
+/*css add on 16/5/2013*/
+.mleft{margin-left:0px !important}
+.clear{clear:both;height:1px;line-height:1px}
+.outer{background:#FFFFFF;border-left:1px solid #bfbebe;border-right:1px solid #bfbebe;padding:20px 0;margin:0px -1px}
+.breadcrumb{margin-left:20px}
+.breadcrumb h1{color:#464755;font-size:33px;font-weight:bold;letter-spacing:-0.03em;line-height:32px;margin-bottom:5px}
+.breadcrumb h2{float:left;font-size:16px;font-weight:normal;line-height:19px}
+.leftlinks{margin:0px 0 20px 20px;padding:0px}
+.leftlinks ul{list-style:none;margin:0px;padding:0px}
+.leftlinks ul li a{border-bottom:1px solid #DADADA;display:block;padding:5px 0 5px 2%;width:98%;color:#85858D}
+.leftlinks ul li:hover a{color:#000}
+.greybox{background:url(../images/bg.gif) repeat scroll 0 0 transparent;border:1px solid #DFDFDF;border-radius:2px 2px 2px 2px;-moz-border-radius:2px 2px 2px 2px;-webkit-border-radius:2px 2px 2px 2px;padding:10px;margin-right:20px;margin-bottom:20px}
+.request p, .case-studies p{color:#000}
+.features-centered li .image{min-height:129px;line-height:129px}
+.features-centered li .image img{vertical-align:middle}
+/*--- css for career page---*/
+.full-width-heading{margin-bottom:15px;padding:10px 0 0;text-align:center !important}
+.full-width-heading h1{color:#353644;font-size:67px;font-weight:normal;letter-spacing:-3px;line-height:75px}
+.full-width-heading h2{font-size:16px;font-weight:normal;line-height:20px;margin-top:2px}
+.box1:first-child{padding-left:0}
+.box1 .bold{display:block;color:#2F303D;font-size:16px;line-height:20px;padding:0 0 15px 0}
+.box1 .box-inner{float:left}
+.career-gallery{height:460px;width:80%;margin:0px auto;margin-bottom:50px}
+.career-gallery li{position:relative}
+.career-gallery li .img{position:relative;z-index:1;height:460px}
+.career-gallery li .details{position:absolute;z-index:9;background:url(../images/details-bg.png) 0 0 repeat;padding:20px;height:420px;width:260px;top:0;left:100px;color:#fff;font-size:20px;line-height:24px}
+.center-align{padding:0 60px}
+.post-resume{list-style:none;margin:0px}
+.post-resume li{margin-bottom:20px;list-style-type:none}
+.post-resume label{font-family:'Nexa-Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:14px;color:#414142;display:block;line-height:20px}
+.post-resume input[type="text"], .user-info-popup select{width:292px;height:35px;line-height:35px;background:#ecf2f5;font-size:14px;color:#414142;font-family:'Nexa-Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;border:0px}
+.post-resume select{width:300px;height:43px;line-height:20px;padding-top:13px;padding-bottom:10px}
+.post-resume input[type="submit"]{font-family:'Nexa-Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;padding-top:10px}
+.case-studies .bxslider{text-align:center}
+.case-studies .bxslider img{height:330px}
+.case-studies .bx-wrapper .bx-pager.bx-default-pager a{background:#ccc}
+.blog{padding:0 20px}
+.greybox .blog{padding:0px}
+.clients{background:#fff;border-top:1px solid #dedede;border-bottom:1px solid #dedede}
+.clients ul{list-style:none;margin:0px;padding-left:15px;padding-bottom:20px;height:80px;overflow:hidden}
+.clients ul li{float:left;margin:20px 21px 0 0;width:auto !important;min-height:80px;text-align:center;line-height:80px}
+.clients ul li img{vertical-align:middle;height:30px}
+.airbus{height:40px}
+.contact-us{background:url(../images/contact.jpg) 0 0 no-repeat;margin:0 auto;height:451px;color:#fff}
+.contact-us .inner{padding:20px;width:175px}
+.contact-us p{margin-bottom:30px}
+.contact-us h3{color:#fff;margin-bottom:0px}
+.contact-us a{color:#fff;font-weight:bold}
+.features-centered h4{font-size:20px;margin-bottom:5px}
+.footer-logo img{margin-bottom:10px}
+.leftlinks ul li{width:270px;display:inline-block}
+.blog a{color:#3f3e3e}
+ul.blog-list{margin:0px;padding:0px}
+ul.blog-list li{margin-bottom:40px}
+ul.blog-list li .title{margin-bottom:15px}
+ul.blog-list li .title span{color:#888;font-size:13px;display:block}
+ul.blog-list li h2{color:#88d1e4;font-size:24px;margin-bottom:0px;line-height:30px}
+ul.blog-list .details{margin-bottom:20px}
+ul.blog-list .details .image{margin-left:0px}
+ul.blog-list li .details .info{float:left;font-size:13px;line-height:18px;background:none}
+ul.blog-list li .details a{color:#F8981D}
+ul.blog-list li .details p{margin-bottom:15px;font-size:13px;line-height:18px;color:#333}
+ul.blog-list li .bottom{padding:11px 0 12px 0;border-top:1px solid #d2e4e9;border-bottom:2px solid #d2e4e9;color:#888;font-size:13px}
+ul.blog-list li .bottom a{color:#F8981D}
+ul.blog-list li .date{display:inline-block;margin-right:24px}
+ul.blog-list li .date span.icon{background:url(../images/icon-sprite.png) 0 0 no-repeat;display:inline-block;height:15px;width:15px;margin-right:8px}
+ul.blog-list li .comment{display:inline-block;float:right}
+ul.blog-list li .comment span.icon{background:url(../images/icon-sprite.png) 0px -18px no-repeat;display:inline-block;height:14px;width:14px;margin-right:8px}
+.project-list, .services-info{float:none;margin:0px auto}
+.project-list h2, .services-info h2{text-align:center;padding-bottom:15px}
+.project-list{padding-bottom:20px;border-bottom:2px solid #d2e4e9;margin-bottom:30px}
+.project-list ul li{margin-bottom:20px;background:#f4f8f9;padding:8px}
+.project-list ul li .image{background:#fff;margin-bottom:20px;padding:4px;-moz-box-shadow:0 0 5px #888;-webkit-box-shadow:0 0 5px#888;box-shadow:0 0 5px #888}
+.project-list ul li .image img{height:165px;width:260px}
+.project-list ul li .details{min-height:50px}
+.project-list ul li .details h3{color:#6877c0;font-size:20px;line-height:24px;margin-bottom:5px}
+.project-list ul li .details h3 a{color:#6877c0;text-decoration:none}
+.project-list ul li.single{float:none;margin:0px auto}
+.project-list ul li.single .image img{height:auto;width:100%}
+.project-list2{padding-bottom:20px;border-bottom:2px solid #d2e4e9;margin-bottom:30px}
+.project-list2 ul li{min-height:205px;margin-bottom:20px;padding:8px;-moz-box-shadow:0 0 5px #888;-webkit-box-shadow:0 0 5px#888;box-shadow:0 0 5px #888}
+.project-list2 ul li .image{float:left;margin-left:0px}
+.project-list2 ul li .image img{border:1px solid #666}
+.project-list2 ul li .details{min-height:50px;margin-left:20px}
+.project-list2 ul li .details h3{color:#6877c0;font-size:20px;line-height:24px;margin-bottom:5px}
+.project-list2 ul li .details h3 a{color:#6877c0;text-decoration:none}
+.mleft20{margin-left:20px}
+.mleft50{margin-left:50px}
+.mleft130{margin-left:130px}
+#footer .touch{background:url(../images/footer-bg.png) 0 bottom repeat-x;height:250px;margin-left:5px;position:absolute;right:0;top:-15px;width:200px}
+#footer .touch .inner{margin-left:auto;margin-right:auto;margin-top:7px;text-align:center;width:195px}
+#footer .touch .inner .title{color:#FFFFFF;font-family:'DinLight', Arial, sans-serif;font-size:32px;letter-spacing:2px;padding-bottom:10px;padding-top:33px}
+#footer .touch .inner .data{border-bottom:1px solid #FFC668;border-top:1px solid #FFC668;padding:24px 0 15px}
+#footer .touch .inner .social{height:25px;margin:15px auto 0;width:100px}
+.address{position:relative}
+.contact-form form p{margin-bottom:10px}
+.contact-form input[type="text"], .contact-form input[type="password"], .contact-form select{height:18px}
+.clients-list .bx-wrapper{height:80px;margin-bottom:0px}
+
+/* umar */
+.row-general h4{margin-bottom:5px !important}
+.company_link{font-weight:bold;text-transform:uppercase;line-height:13px;color:#000}
+.borderRadius{border:1px solid #cbcece;border-radius:6px}
+.services-heading{margin:-20px auto 0;padding:20px inherit;text-align:center;border-bottom:2px solid #d2e4e9;float:none;margin-bottom:30px;background:#6877c0}
+.services-heading h1{color:#fff !important;padding:15px 10px 0}
+.marginBtn20{margin-bottom:20px}
+.padding10{min-height:150px}
+.padding10 h3{padding:10px 10px 0;margin-bottom:10px}
+.padding10 p{padding:0 10px 5px}
+.padding20{padding:20px}
+ul.listing{list-style:none;padding-bottom:10px;padding-left:10px}
+ul.listing li{background:url(../images/check-icon.png) no-repeat 0 4px;padding-left:20px;color:#595858;text-shadow:none;padding-bottom:5px;font-size:13px}
+.minheight225{background:#2b2b2b;min-height:225px;color:#fff}
+.minheight225 h3{color:#fff;padding-left:10px}
+ul.listingBox{list-style:none;padding-bottom:10px;padding-left:10px}
+ul.listingBox li{background:url(../images/arrow-left.png) no-repeat 0 4px;padding-left:15px}
+img.servicesImg{width:460px !important;height:250px !important}
+.features-centered li{background:url(../images/divider-featured.png) no-repeat 0 center;margin-left:0;padding-left:10px;padding-right:10px}
+.features-centered li:first-child{background:none}
+.ourClients li{padding-bottom:20px}
+.caseStudies{padding:30px}
+.caseStudies ul.list-unordered, .caseStudies ul.list-arrow{padding-bottom:10px}
+.modal-header h3{margin:5px !important;line-height:23px !important}
+.caseStudies .list-unordered li, .caseStudies .list-arrow li{margin-left:15px;line-height:16px;list-style:disc}
+ul.teamCrack li{background:url(../images/bullet-icon.png) no-repeat 0 8px;padding:5px 0 5px 20px;padding-bottom:5px;line-height:16px;text-shadow:none;font-size:16px;color:#000}
+.suffix_1 h2{padding-top:20px;padding-bottom:5px}
+.alpha img{padding-top:10px}
+.groupImg{background-color:#000;text-align:center;margin-bottom:30px; padding:50px 0}
+.contentBox .borderRadius{min-height:90px}
+.features-centered h4 a{color:#ddd !important}
+.features-centered h4 a:hover{color:#fff !important}
+fieldset p{margin-bottom:10px}
+
+/* Career page start */
+
+.ui-widget-content{ padding-bottom:10px}
+.ui-widget-content strong { display:block; margin-bottom:5px}
+.ui-widget-content p{ font-size:13px; margin-bottom:25px}
+.ui-widget-content p.list { margin-bottom:5px}
+.ui-widget-content ul { margin-bottom:20px}
+.ui-widget-content ul li { background:none;margin:0;padding:0 0 5px;font-size:12px;list-style:disc inside}
+.ui-widget-content a.applyBtn { display:block; float:left;margin:20px 0; font-size:13px; padding:12px}
+.ui-accordion .ui-accordion-header, .ui-accordion .ui-accordion-content { border-radius:0;}
+.ui-accordion .ui-accordion-header {background:url(../images/boxbg.png) repeat-x left top;border:1px solid #D3D3D3;color:#383996;font-weight:bold}
+.ui-accordion .ui-accordion-content { background:url(../images/boxbg.png) repeat-x left bottom;border:1px solid #D3D3D3}
+.ui-icon, .ui-widget-content .ui-icon{ background:url(../images/icons/bullet.png) no-repeat -5px -8px !important}
+#myModalLabel .ui-icon, .ui-widget-content .ui-icon{ background:none !important; display:none}
+.ui-state-active .ui-icon { background:url(../images/icons/bullet-down.png) no-repeat -8px -8px !important}
+.ui-widget-content strong.inline{display:inline;}
+
+/* Career page end */

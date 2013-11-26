@@ -1,0 +1,7 @@
+js/jquery-1.8.3.min.js
+js/jquery-1.js
+js/jquery.bxslider.js
+js/bootstrap.js
+js/ga.js
+js/crawler.js
+js/custom.js
