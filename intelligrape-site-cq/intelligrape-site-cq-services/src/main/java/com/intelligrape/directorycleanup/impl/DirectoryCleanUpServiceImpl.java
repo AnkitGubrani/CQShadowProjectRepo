@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.jcr.*;
+import java.net.URLEncoder;
 
 @Component(label = "Directory Cleanup component" ,enabled = true ,immediate = true ,metatype = true)
 @Service(DirectoryCleanUpService.class)
@@ -20,33 +21,47 @@ public class DirectoryCleanUpServiceImpl implements DirectoryCleanUpService {
     Logger logger = LoggerFactory.getLogger(DirectoryCleanUpServiceImpl.class);
 
     @Override
-    public void directoryCleanUp() {
+    public void directoryCleanUp(String[] cleanUpNodes) {
         try {
+            logger.debug("CleanUp Method");
             Session session = slingRepository.login(new SimpleCredentials("admin", "ankitg90".toCharArray()));
             Node rootNode = session.getRootNode();
 
-            if(rootNode.hasNode("CleanUpNode"))
+            //This loop iterates through all the nodes entered by USER
+            for(int index = 0; index < cleanUpNodes.length;index++)
             {
-                Node subNode = rootNode.getNode("CleanUpNode");
-                NodeIterator nodeItr = subNode.getNodes();
-                while (nodeItr.hasNext())
+                String cleanUpNode = cleanUpNodes[index];
+                if(rootNode.hasNode(cleanUpNode))
                 {
-                    Node deleteNode = nodeItr.nextNode();
-                    System.out.println("Removing the node ="+deleteNode);
-                    deleteNode.remove();
+                    Node subNode = rootNode.getNode(cleanUpNode);
+                    logger.debug("sub node=>"+subNode.getName());
+
+                    NodeIterator nodeItr = subNode.getNodes();
+                    //Variable i for deleting 2 Nodes at a time.
+                    int i =0 ;
+                    while (nodeItr.hasNext())
+                    {
+                        Node deleteNode = nodeItr.nextNode();
+                        logger.debug("Removing the node ="+deleteNode);
+                        deleteNode.remove();
+                        i++;
+                        if(i==2)
+                        {
+                            break;
+                        }
+                    }
+                }else
+                {
+                    //If given node does'nt exsists
+                    logger.debug("No such node exsists ====");
                 }
-            }else
-            {
-                System.out.println("No such node exsists ====");
             }
             session.save();
             session.logout();
         } catch (RepositoryException e) {
-            System.out.println("RepositoryException -=>"+e.getLocalizedMessage()+" message "+e.getMessage());
             logger.error("Exception-directoryCleanUp", e.getMessage());
         }
         catch (Exception e) {
-            System.out.println("Exception -=>"+e.getLocalizedMessage()+" message "+e.getMessage());
             logger.error("Exception-directoryCleanUp", e.getMessage());
         }
     }
