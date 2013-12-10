@@ -5,7 +5,7 @@
   This is actual page
 
 --%><%
-%><%@include file="/apps/intelligrapeComponents/components/page/global.jsp"%><%
+%><%@include file="/apps/intelligrape-site-cq/components/page/global.jsp"%><%
 %><%@page session="false" %><%
 %><%
     // TODO add you code here
@@ -18,7 +18,7 @@
 <body>
 <h3>Test Page For Intelligrape components</h3>
 
-<cq:include path="par" resourceType="/libs/foundation/components/parsys" />
+<cq:include path="canvas" resourceType="/libs/foundation/components/parsys" />
 <cq:include script="footer.jsp"/>
 </body>
 </html>

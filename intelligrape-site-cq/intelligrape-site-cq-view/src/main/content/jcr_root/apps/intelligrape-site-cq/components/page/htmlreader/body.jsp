@@ -1,11 +1,50 @@
 <%@include file="/libs/foundation/global.jsp"%>
 <body>
-    <div align="center">
-        <h2>Custom HTML Reader</h2>
-        <form action="/htmlimporter/upload" method="POST" enctype="multipart/form-data">
-            <input name="htmlFile" type="file" />
-            <br><br>
-            <input type="submit" value="Upload" />
-        </form>
+    <div style="margin-left:auto;margin-right:auto;width:70%;background-color:#00ffff;font-weight: 500;font-style: italic">
+        <div>
+            <h2>Custom HTML Reader</h2>
+            <form name="htmlReaderFrom" action="/htmlimporter/upload" method="POST" enctype="multipart/form-data">
+                Select Html File to be read :<input name="htmlFile" type="file" style="float: right" />
+                </br></br>
+                Select Target Template :
+                <select id="selectTemplate" name="targetTemplate" style="width:230px;float: right;">
+                    <option value=""></option>
+                </select>
+                </br></br>
+                Enter Target Page :<input type="text" name="targetPage" value="/content/" style="float: right" />
+                </br></br>
+                Enter name of the page to be created : <input type="text" name="pageName" style="float: right" />
+                </br></br>
+                Enter Title for the page : <input name="pageTitle" type="text" style="float: right" />
+                </br></br>
+                <div style="margin-left:auto;margin-right:auto;width:20%;">
+                    <input type="button" value="Upload" id="uploadBtn" />
+                </div>
+            </form>
+        </div>
+        </br><div id="error" style="color: red;margin-left:auto;margin-right:auto;width:45%;"></div>
     </div>
+<script type="text/javascript">
+    function upload()
+    {
+        if(($('[name=targetPage]').val()=="/content/"))
+        {
+            $('#error').text("!!!!!!Please Enter the Target Page!!!!!!");
+        }else if(($('[name=pageName]').val()==""))
+        {
+            $('#error').text("!!!!!!Please Enter the Page Name!!!!!!");
+        }else if(($('[name=pageTitle]').val()==""))
+        {
+            $('#error').text("!!!!!!Please Enter the Page Title!!!!!!");
+        }else
+        {
+            $('#error').text("");
+            $('[name=htmlReaderFrom]').submit();
+        }
+
+
+
+    }
+    $("#uploadBtn").on("click" ,upload);
+</script>
 </body>

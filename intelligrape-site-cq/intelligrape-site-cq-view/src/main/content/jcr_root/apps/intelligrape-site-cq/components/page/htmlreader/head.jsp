@@ -36,9 +36,23 @@
     <cq:include script="headlibs.jsp"/>
     <cq:include script="/libs/wcm/core/components/init/init.jsp"/>
     <cq:include script="stats.jsp"/>
+    <cq:includeClientLib categories="custom.jquery"/>
     <% if (favIcon != null) { %>
     <link rel="icon" type="image/vnd.microsoft.icon" href="<%= xssAPI.getValidHref(favIcon) %>"<%=xs%>>
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<%= xssAPI.getValidHref(favIcon) %>"<%=xs%>>
     <% } %>
     <title><%= currentPage.getTitle() == null ? xssAPI.encodeForHTML(currentPage.getName()) : xssAPI.encodeForHTML(currentPage.getTitle()) %></title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $.getJSON("/bin/wcm/templates" ,function(data){
+                var template = $('#selectTemplate');
+                for(i=0;i<data.templates.length;i++)
+                {
+                    var optionStr = "<option value=\""+data.templates[i].path+"\">"+
+                            data.templates[i].title+"</option>";
+                    template.append(optionStr);
+                }
+            });
+        });
+    </script>
 </head>
