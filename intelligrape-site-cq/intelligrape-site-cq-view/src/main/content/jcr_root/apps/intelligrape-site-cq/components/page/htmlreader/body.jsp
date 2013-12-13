@@ -27,7 +27,16 @@
 <script type="text/javascript">
     function upload()
     {
-        if(($('[name=targetPage]').val()=="/content/"))
+        if(($('[name=htmlFile]').val()==""))
+        {
+            $('#error').text("!!!!!!Please Select a file to be read!!!!!!");
+        }else if(($('[name=htmlFile]').val().indexOf(".html")==-1) || ($('[name=htmlFile]').val().indexOf(".htm")==-1))
+        {
+            $('#error').text("!!!!!!Please Select a HTML only!!!!!!");
+        }else if(($('[name=targetTemplate]').val()==""))
+        {
+            $('#error').text("!!!!!!Please Select a target template!!!!!!");
+        }else if(($('[name=targetPage]').val()=="/content/") || ($('[name=targetPage]').val()==""))
         {
             $('#error').text("!!!!!!Please Enter the Target Page!!!!!!");
         }else if(($('[name=pageName]').val()==""))
@@ -41,9 +50,6 @@
             $('#error').text("");
             $('[name=htmlReaderFrom]').submit();
         }
-
-
-
     }
     $("#uploadBtn").on("click" ,upload);
 </script>

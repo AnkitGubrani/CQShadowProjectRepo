@@ -17,15 +17,13 @@ public class CreateNodes {
 
     private static final Logger logger = LoggerFactory.getLogger(CreateNodes.class);
 
-    public Node createCanvasNode(SlingHttpServletRequest request ,String pagePath)
+    public Node createCanvasNode(SlingHttpServletRequest request ,String pagePath )
     {
         //Method to create CANVAS Node for parsys
         Node canvasNode = null;
         try{
             Resource resource = request.getResourceResolver().getResource(pagePath);
-            //logger.info("Res ="+resource.getName());
             Resource childRes = resource.getChild("jcr:content");
-            //logger.info("Child res=>>" + childRes.getName() + childRes.getPath());
             Node childResNode = childRes.adaptTo(Node.class);
             if(childResNode.hasNode("canvas"))
             {

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          component.mapping="[text!foundation/components/text!text,title!foundation/components/title!jcr:title,clickthroughlink!mcm/components/cta-clickthroughlink,image!foundation/components/image,graphicallink!mcm/components/cta-graphicallink]"/>
