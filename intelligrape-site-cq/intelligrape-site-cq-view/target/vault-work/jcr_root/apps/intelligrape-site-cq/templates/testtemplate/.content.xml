@@ -7,5 +7,5 @@
     ranking="{Long}100">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="intelligrapeComponents/components/page/testPage"/>
+        sling:resourceType="intelligrape-site-cq/components/page/testPage"/>
 </jcr:root>

@@ -5,7 +5,7 @@
   This is actual page
 
 --%><%
-%><%@include file="/apps/intelligrapeComponents/components/page/global.jsp"%><%
+%><%@include file="/apps/intelligrape-site-cq/components/page/global.jsp"%><%
 %><%@page session="false" %><%
 %><%
     // TODO add you code here

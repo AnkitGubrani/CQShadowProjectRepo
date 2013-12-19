@@ -1,0 +1,1502 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.intelligrape.test:intelligrape-site-cq-view:content-package:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.day.commons.osgi.wrapper:com.day.commons.osgi.wrapper.commons-httpclient:jar -> duplicate declaration of version 3.1.0.018 @ com.intelligrape.test:parent:1.0.0-SNAPSHOT, /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/pom.xml, line 199, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.intelligrape.test:intelligrape-site-cq-services:bundle:1.0.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.felix:org.apache.felix.scr.annotations:jar -> duplicate declaration of version (?) @ line 71, column 21
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.day.commons.osgi.wrapper:com.day.commons.osgi.wrapper.commons-httpclient:jar -> duplicate declaration of version (?) @ line 111, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.intelligrape.test:parent:pom:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.day.commons.osgi.wrapper:com.day.commons.osgi.wrapper.commons-httpclient:jar -> duplicate declaration of version 3.1.0.018 @ line 199, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] com.intelligrape.test - parent
+[INFO] com.intelligrape.test - intelligrape-site-cq-view
+[INFO] com.intelligrape.test - intelligrape-site-cq-services
+[INFO] com.intelligrape.test - intelligrape-site-cq-config
+[INFO] com.intelligrape.test - intelligrape-site-cq-taglib
+[INFO] com.intelligrape.test - intelligrape-site-cq-content
+[INFO] com.intelligrape.test - intelligrape-site-cq-all
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.intelligrape.test - parent 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ parent ---
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/pom.xml to /home/roni/.m2/repository/com/intelligrape/test/parent/1.0.0-SNAPSHOT/parent-1.0.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.intelligrape.test - intelligrape-site-cq-view 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ intelligrape-site-cq-view ---
+[INFO] Deleting /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-view/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ intelligrape-site-cq-view ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-view/src/main/resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ intelligrape-site-cq-view ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 109 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ intelligrape-site-cq-view ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ intelligrape-site-cq-view ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-view/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ intelligrape-site-cq-view ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ intelligrape-site-cq-view ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-view/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ intelligrape-site-cq-view ---
+[INFO] Building jar: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-view/target/intelligrape-site-cq-view-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ intelligrape-site-cq-view ---
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-view/target/intelligrape-site-cq-view-1.0.0-SNAPSHOT.zip to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-view/1.0.0-SNAPSHOT/intelligrape-site-cq-view-1.0.0-SNAPSHOT.zip
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-view/pom.xml to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-view/1.0.0-SNAPSHOT/intelligrape-site-cq-view-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ intelligrape-site-cq-view ---
+[INFO] Installing intelligrape-site-cq-view (/home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-view/target/intelligrape-site-cq-view-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] intelligrape-site-cq-view, 1.0.0-SNAPSHOT (313680 bytes)
+[INFO]     Created : Mon, 16 Dec 2013 16:19:56 +0530 by roni
+[INFO]     Modified: -
+[INFO]     Unpacked: Mon, 16 Dec 2013 16:08:58 +0530 by admin
+[INFO] 
+[INFO] Installing content...
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+D /apps/intelligrape-site-cq/components/image
+D /apps/intelligrape-site-cq/components/text
+- /apps/intelligrape-site-cq/components/content/listslide
+- /apps/intelligrape-site-cq/components/content/listslide/listslide.jsp
+- /apps/intelligrape-site-cq/components/content/listslide/dialog
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/image
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/link
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/image/items
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/image/items/logoReqType
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/image/items/logoimage
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/link/items
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/link/items/linkPath
+- /apps/intelligrape-site-cq/components/content/searchcomponent
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items/items/search
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items/items/search/items
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items/items/search/items/searchpath
+- /apps/intelligrape-site-cq/components/content/searchcomponent/searchcomponent.jsp
+- /apps/intelligrape-site-cq/components/content/textimage
+- /apps/intelligrape-site-cq/components/content/textimage/clientlibs
+- /apps/intelligrape-site-cq/components/content/textimage/clientlibs/textimage.css
+- /apps/intelligrape-site-cq/components/content/textimage/clientlibs/css.txt
+- /apps/intelligrape-site-cq/components/content/textimage/icon.png
+- /apps/intelligrape-site-cq/components/content/textimage/textimage.jsp
+- /apps/intelligrape-site-cq/components/content/textimage/dialog
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab2
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab4
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/richFlag
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items/enable
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items/evars
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items/events
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items/enable/listeners
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/alt
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/description
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/linkURL
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/resType
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/size
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/title
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:dropTargets
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:inplaceEditing
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:dropTargets/image
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:dropTargets/image/parameters
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:dropTargets/image/parameters/image
+- /apps/intelligrape-site-cq/components/content/herocontainer
+- /apps/intelligrape-site-cq/components/content/herocontainer/dialog
+- /apps/intelligrape-site-cq/components/content/herocontainer/herocontainer.jsp
+- /apps/intelligrape-site-cq/components/content/searchresult
+- /apps/intelligrape-site-cq/components/content/searchresult/searchresult.jsp
+- /apps/intelligrape-site-cq/components/content/searchresult/dialog
+- /apps/intelligrape-site-cq/components/content/HeroCarousel
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/children
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/querybuilder
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/playSpeed
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/transTime
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o1
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o2
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o3
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o4
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o5
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o6
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o7
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o8
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/children/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/children/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/children/items/parentPage
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel/items/image
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel/items/img
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/limit
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/children
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/heroCarousel
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/querybuilder
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/search
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/static
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options/created
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options/modified
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options/template
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options/title
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/querybuilder/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/querybuilder/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/querybuilder/items/savedquery
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search/items/query
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search/items/searchIn
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static/items/pages
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static/items/pages/fieldConfig
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/carousel.jsp
+- /apps/intelligrape-site-cq/components/content/teaserComponent
+- /apps/intelligrape-site-cq/components/content/teaserComponent/teaserComponent.jsp
+- /apps/intelligrape-site-cq/components/content/teaserComponent/dialog
+- /apps/intelligrape-site-cq/components/content/teaserComponent/dialog/items
+- /apps/intelligrape-site-cq/components/content/teaserComponent/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/teaserComponent/dialog/items/items/tab1
+- /apps/intelligrape-site-cq/components/content/MarqueeImage
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/MarqueeImage.jsp
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type/listeners
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type/options
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type/options/carousel
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type/options/marquee
+- /apps/intelligrape-site-cq/components/content/textimgslide
+- /apps/intelligrape-site-cq/components/content/textimgslide/textimgslide.jsp
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/text
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items/mainResType
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items/mainimg
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items/thumbResType
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items/thumbimg
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/text/items
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/text/items/imgtext
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/text/items/thumbtext
+- /apps/intelligrape-site-cq/components/content/textimgslide/cq:editConfig
+- /apps/intelligrape-site-cq/components/content/listcontainer
+- /apps/intelligrape-site-cq/components/content/listcontainer/dialog
+- /apps/intelligrape-site-cq/components/content/listcontainer/dialog/items
+- /apps/intelligrape-site-cq/components/content/listcontainer/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/listcontainer/listcontainer.jsp
+- /apps/intelligrape-site-cq/components/content/logo
+- /apps/intelligrape-site-cq/components/content/logo/img.GET.java
+- /apps/intelligrape-site-cq/components/content/logo/logo.jsp
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/img
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic/items
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic/items/absParent
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic/items/imgWidth
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic/items/margin
+- /apps/intelligrape-site-cq/components/sample/html.jsp
+- /apps/intelligrape-site-cq/components/page/testPage
+- /apps/intelligrape-site-cq/components/page/testPage/head.jsp
+- /apps/intelligrape-site-cq/components/page/testPage/testPage.jsp
+- /apps/intelligrape-site-cq/components/page/testPage/footer.jsp
+- /apps/intelligrape-site-cq/components/page/groovy
+- /apps/intelligrape-site-cq/components/page/groovy/groovy.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage
+- /apps/intelligrape-site-cq/components/page/HomePage/body.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage/HomePage.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage/Header.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage/content.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage/Footer.jsp
+U /apps/intelligrape-site-cq/components/page/global.jsp/jcr:content
+U /apps/intelligrape-site-cq/components/page/global.jsp/jcr:content/jcr:data
+- /apps/intelligrape-site-cq/components/examplecomponent2
+- /apps/intelligrape-site-cq/components/examplecomponent2/dialog
+- /apps/intelligrape-site-cq/components/examplecomponent2/dialog/items
+- /apps/intelligrape-site-cq/components/examplecomponent2/dialog/items/items
+- /apps/intelligrape-site-cq/components/examplecomponent2/dialog/items/items/tab1
+- /apps/intelligrape-site-cq/components/examplecomponent2/examplecomponent2.jspx
+- /apps/intelligrape-site-cq/components/examplepage
+D /apps/intelligrape-site-cq/components/examplepage/solrsearch.jsp
+U /apps/intelligrape-site-cq/components/examplepage/body.jsp/jcr:content
+U /apps/intelligrape-site-cq/components/examplepage/body.jsp/jcr:content/jcr:data
+- /apps/intelligrape-site-cq/components/examplecomponent
+- /apps/intelligrape-site-cq/components/examplecomponent/examplecomponent.jsp
+- /apps/intelligrape-site-cq/components/examplecomponent/dialog
+- /apps/intelligrape-site-cq/components/examplecomponent/dialog/items
+- /apps/intelligrape-site-cq/components/examplecomponent/dialog/items/items
+- /apps/intelligrape-site-cq/components/examplecomponent/dialog/items/items/tab1
+- /apps/intelligrape-site-cq/components/init.jsp
+- /apps/intelligrape-site-cq/components/global.jspx
+- /apps/intelligrape-site-cq/templates/groovyPage
+- /apps/intelligrape-site-cq/templates/groovyPage/jcr:content
+- /apps/intelligrape-site-cq/templates/exampletemplate
+- /apps/intelligrape-site-cq/templates/exampletemplate/jcr:content
+- /apps/intelligrape-site-cq/templates/testtemplate
+- /apps/intelligrape-site-cq/templates/testtemplate/jcr:content
+- /apps/intelligrape-site-cq/templates/HomePage
+- /apps/intelligrape-site-cq/templates/HomePage/jcr:content
+- /etc/designs/intelligrape-site-cq
+- /etc/designs/intelligrape-site-cq/static.css
+- /etc/designs/intelligrape-site-cq/favicon.ico
+saving approx 7 nodes... 
+Package imported. 
+Package installed in 365ms.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.intelligrape.test - intelligrape-site-cq-services 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ intelligrape-site-cq-services ---
+[INFO] Deleting /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ intelligrape-site-cq-services ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ intelligrape-site-cq-services ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/intelligrapeComponents/TestServlet.java: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/intelligrapeComponents/TestServlet.java uses unchecked or unsafe operations.
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/intelligrapeComponents/TestServlet.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-scr-plugin:1.15.0:scr (generate-scr-scrdescriptor) @ intelligrape-site-cq-services ---
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/intelligrapeComponents/impl/SearchWrapperImpl.java [1:1]: @Component : Component is defined to generate metatype information, however no properties have been defined; in case no properties are wanted, consider to use 'metatype=false'
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/directorycleanup/impl/DirectoryCleanUpServiceImpl.java [1:1]: @Component : Component is defined to generate metatype information, however no properties have been defined; in case no properties are wanted, consider to use 'metatype=false'
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/test/services/GoodbyeWorldService.java [1:1]: @Component : Component is defined to generate metatype information, however no properties have been defined; in case no properties are wanted, consider to use 'metatype=false'
+[INFO] Generating 1 MetaType Descriptors in /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/metatype/com.intelligrape.intelligrapeComponents.SearchServlet.xml
+[INFO] Generating 1 MetaType Descriptors in /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/metatype/com.intelligrape.intelligrapeComponents.impl.SearchWrapperImpl.xml
+[INFO] Generating 1 MetaType Descriptors in /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/metatype/com.intelligrape.directorycleanup.impl.DirectoryCleanUpServiceImpl.xml
+[INFO] Generating 1 MetaType Descriptors in /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/metatype/com.intelligrape.test.services.GoodbyeWorldService.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.intelligrapeComponents.SearchServlet.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.intelligrapeComponents.impl.SearchWrapperImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.search.ReplicationEventHandler.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.directorycleanup.TestCleanUpServlet.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.directorycleanup.impl.DirectoryCleanUpServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.test.services.GoodbyeWorldService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ intelligrape-site-cq-services ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ intelligrape-site-cq-services ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ intelligrape-site-cq-services ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ intelligrape-site-cq-services ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ intelligrape-site-cq-services ---
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-services/1.0.0-SNAPSHOT/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/pom.xml to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-services/1.0.0-SNAPSHOT/intelligrape-site-cq-services-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ intelligrape-site-cq-services ---
+[INFO] Installing com/intelligrape/test/intelligrape-site-cq-services/1.0.0-SNAPSHOT/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] --- maven-sling-plugin:2.1.0:install (install-bundle) @ intelligrape-site-cq-services ---
+[INFO] Installing Bundle com.intelligrape.test.intelligrape-site-cq-services(/home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar) to http://localhost:4502/apps/intelligrape-site-cq/install via PUT
+[INFO] Bundle installed
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.intelligrape.test - intelligrape-site-cq-config 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ intelligrape-site-cq-config ---
+[INFO] Deleting /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-config/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ intelligrape-site-cq-config ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-config/src/main/resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ intelligrape-site-cq-config ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ intelligrape-site-cq-config ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ intelligrape-site-cq-config ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-config/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ intelligrape-site-cq-config ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ intelligrape-site-cq-config ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-config/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ intelligrape-site-cq-config ---
+[INFO] Building jar: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-config/target/intelligrape-site-cq-config-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ intelligrape-site-cq-config ---
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-config/target/intelligrape-site-cq-config-1.0.0-SNAPSHOT.zip to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-config/1.0.0-SNAPSHOT/intelligrape-site-cq-config-1.0.0-SNAPSHOT.zip
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-config/pom.xml to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-config/1.0.0-SNAPSHOT/intelligrape-site-cq-config-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ intelligrape-site-cq-config ---
+[INFO] Installing intelligrape-site-cq-config (/home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-config/target/intelligrape-site-cq-config-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] intelligrape-site-cq-config, 1.0.0-SNAPSHOT (13415 bytes)
+[INFO]     Created : Mon, 16 Dec 2013 16:20:00 +0530 by roni
+[INFO]     Modified: -
+[INFO]     Unpacked: Mon, 16 Dec 2013 16:08:58 +0530 by admin
+[INFO] 
+[INFO] Installing content...
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/intelligrape-site-cq/runmodes/config/org.apache.sling.commons.log.LogManager.factory.config-intelligrape
+saving approx 0 nodes... 
+Package imported. 
+Package installed in 13ms.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.intelligrape.test - intelligrape-site-cq-taglib 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ intelligrape-site-cq-taglib ---
+[INFO] Deleting /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/target
+[INFO] 
+[INFO] --- jsptld-maven-plugin:0.4.0:generate (default) @ intelligrape-site-cq-taglib ---
+[INFO] 
+Loading source files for package com.intelligrape.test.taglib.osgi...
+Loading source files for package com.intelligrape.test.taglib...
+Constructing Javadoc information...
+16:20:02.635 INFO  - com.squeakysand.jsp.tldgenerator.TldWriter:write:49 - writing tld to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/target/classes/META-INF/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.tld 
+9 warnings
+[WARNING] Javadoc Warnings
+[WARNING] SLF4J: Class path contains multiple SLF4J bindings.
+[WARNING] SLF4J: Found binding in [jar:file:/home/roni/.m2/repository/org/slf4j/slf4j-log4j12/1.5.8/slf4j-log4j12-1.5.8.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[WARNING] SLF4J: Found binding in [jar:file:/home/roni/.m2/repository/org/slf4j/slf4j-simple/1.5.8/slf4j-simple-1.5.8.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[WARNING] SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+[WARNING] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar(com/intelligrape/test/services/GoodbyeWorldService.class): warning: Cannot find annotation method 'immediate()' in type 'Component': class file for org.apache.felix.scr.annotations.Component not found
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar(com/intelligrape/test/services/GoodbyeWorldService.class): warning: Cannot find annotation method 'metatype()' in type 'Component'
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar(com/intelligrape/test/services/GoodbyeWorldService.class): warning: Cannot find annotation method 'value()' in type 'Service': class file for org.apache.felix.scr.annotations.Service not found
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar(com/intelligrape/test/services/GoodbyeWorldService.class): warning: Cannot find annotation method 'value()' in type 'Properties': class file for org.apache.felix.scr.annotations.Properties not found
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar(com/intelligrape/test/services/GoodbyeWorldService.class): warning: Cannot find annotation method 'name()' in type 'Property': class file for org.apache.felix.scr.annotations.Property not found
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar(com/intelligrape/test/services/GoodbyeWorldService.class): warning: Cannot find annotation method 'value()' in type 'Property'
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar(com/intelligrape/test/services/GoodbyeWorldService.class): warning: Cannot find annotation method 'name()' in type 'Property'
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar(com/intelligrape/test/services/GoodbyeWorldService.class): warning: Cannot find annotation method 'value()' in type 'Property'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ intelligrape-site-cq-taglib ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ intelligrape-site-cq-taglib ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] Cannot find annotation method 'immediate()' in type 'org.apache.felix.scr.annotations.Component': class file for org.apache.felix.scr.annotations.Component not found
+[WARNING] Cannot find annotation method 'metatype()' in type 'org.apache.felix.scr.annotations.Component'
+[WARNING] Cannot find annotation method 'value()' in type 'org.apache.felix.scr.annotations.Service': class file for org.apache.felix.scr.annotations.Service not found
+[WARNING] Cannot find annotation method 'value()' in type 'org.apache.felix.scr.annotations.Properties': class file for org.apache.felix.scr.annotations.Properties not found
+[WARNING] Cannot find annotation method 'name()' in type 'org.apache.felix.scr.annotations.Property': class file for org.apache.felix.scr.annotations.Property not found
+[WARNING] Cannot find annotation method 'value()' in type 'org.apache.felix.scr.annotations.Property'
+[WARNING] Cannot find annotation method 'name()' in type 'org.apache.felix.scr.annotations.Property'
+[WARNING] Cannot find annotation method 'value()' in type 'org.apache.felix.scr.annotations.Property'
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ intelligrape-site-cq-taglib ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ intelligrape-site-cq-taglib ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ intelligrape-site-cq-taglib ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ intelligrape-site-cq-taglib ---
+[WARNING] Include-Resource: overriding META-INF/tags/helloWorld.tagx=src/main/resources/META-INF/tags/helloWorld.tagx with META-INF/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.tld=/home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/target/classes/META-INF/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.tld (add {maven-resources} if you want to include the maven resources)
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ intelligrape-site-cq-taglib ---
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/target/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.jar to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-taglib/1.0.0-SNAPSHOT/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/pom.xml to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-taglib/1.0.0-SNAPSHOT/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ intelligrape-site-cq-taglib ---
+[INFO] Installing com/intelligrape/test/intelligrape-site-cq-taglib/1.0.0-SNAPSHOT/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] --- maven-sling-plugin:2.1.0:install (install-bundle) @ intelligrape-site-cq-taglib ---
+[INFO] Installing Bundle com.intelligrape.test.intelligrape-site-cq-taglib(/home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-taglib/target/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.jar) to http://localhost:4502/apps/intelligrape-site-cq/install via PUT
+[INFO] Bundle installed
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.intelligrape.test - intelligrape-site-cq-content 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ intelligrape-site-cq-content ---
+[INFO] Deleting /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-content/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ intelligrape-site-cq-content ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-content/src/main/resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ intelligrape-site-cq-content ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ intelligrape-site-cq-content ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ intelligrape-site-cq-content ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-content/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ intelligrape-site-cq-content ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ intelligrape-site-cq-content ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-content/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ intelligrape-site-cq-content ---
+[INFO] Building jar: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-content/target/intelligrape-site-cq-content-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ intelligrape-site-cq-content ---
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-content/target/intelligrape-site-cq-content-1.0.0-SNAPSHOT.zip to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-content/1.0.0-SNAPSHOT/intelligrape-site-cq-content-1.0.0-SNAPSHOT.zip
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-content/pom.xml to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-content/1.0.0-SNAPSHOT/intelligrape-site-cq-content-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ intelligrape-site-cq-content ---
+[INFO] Installing intelligrape-site-cq-content (/home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-content/target/intelligrape-site-cq-content-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] intelligrape-site-cq-content, 1.0.0-SNAPSHOT (107317 bytes)
+[INFO]     Created : Mon, 16 Dec 2013 16:20:03 +0530 by roni
+[INFO]     Modified: -
+[INFO]     Unpacked: Mon, 16 Dec 2013 16:08:57 +0530 by admin
+[INFO] 
+[INFO] Installing content...
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /content/intelligrape-site-cq
+- /content/intelligrape-site-cq/jcr:content
+- /content/intelligrape-site-cq/home-page
+U /content/intelligrape-site-cq/home-page/jcr:content
+- /content/intelligrape-site-cq/home-page/jcr:content/par
+A /content/intelligrape-site-cq/home-page/jcr:content/par/examplecomponent
+A /content/intelligrape-site-cq/home-page/jcr:content/par/examplecomponent2
+- /content/intelligrape-site-cq/home-page/jcr:content/par/image
+D /content/intelligrape-site-cq/home-page/jcr:content/par/text
+D /content/intelligrape-site-cq/home-page/jcr:content/par/title
+- /content/dam/intelligrape-site-cq
+- /content/dam/intelligrape-site-cq/jcr:content
+- /content/dam/intelligrape-site-cq/logo.jpg
+U /content/dam/intelligrape-site-cq/logo.jpg/jcr:content
+U /content/dam/intelligrape-site-cq/logo.jpg/jcr:content/metadata
+- /content/dam/intelligrape-site-cq/logo.jpg/jcr:content/renditions/original
+- /content/dam/intelligrape-site-cq/logo.jpg/jcr:content/renditions/original/jcr:content
+- /content/dam/intelligrape-site-cq/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.140.100.png
+- /content/dam/intelligrape-site-cq/logo.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg
+- /content/dam/intelligrape-site-cq/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png
+- /content/dam/intelligrape-site-cq/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.48.48.png
+- /etc/designs/intelligrape-site-cq/jcr:content/examplepage
+- /etc/designs/intelligrape-site-cq/jcr:content/examplepage/par
+- /etc/designs/intelligrape-site-cq/jcr:content/examplepage/par/section
+saving approx 7 nodes... 
+Package imported. 
+Package installed in 78ms.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.intelligrape.test - intelligrape-site-cq-all 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ intelligrape-site-cq-all ---
+[INFO] Deleting /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-all/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ intelligrape-site-cq-all ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-all/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ intelligrape-site-cq-all ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ intelligrape-site-cq-all ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-all/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ intelligrape-site-cq-all ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ intelligrape-site-cq-all ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ intelligrape-site-cq-all ---
+[INFO] Building jar: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-all/target/intelligrape-site-cq-all-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default) @ intelligrape-site-cq-all ---
+[INFO] Embedding --- Embedded: groupId=com.intelligrape.test,artifactId=intelligrape-site-cq-services,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.intelligrape.test:intelligrape-site-cq-services:jar:1.0.0-SNAPSHOT -> jcr_root/apps/intelligrape-site-cq/install/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar
+[INFO] Embedding --- Embedded: groupId=com.intelligrape.test,artifactId=intelligrape-site-cq-taglib,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.intelligrape.test:intelligrape-site-cq-taglib:jar:1.0.0-SNAPSHOT -> jcr_root/apps/intelligrape-site-cq/install/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.jar
+[INFO] Embedding --- Sub Packages: groupId=com.intelligrape.test,artifactId=intelligrape-site-cq-config,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.intelligrape.test:intelligrape-site-cq-config:content-package:1.0.0-SNAPSHOT -> jcr_root/etc/packages/com.intelligrape.test/intelligrape-site-cq-config-1.0.0-SNAPSHOT.zip
+[INFO] Embedding --- Sub Packages: groupId=com.intelligrape.test,artifactId=intelligrape-site-cq-view,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.intelligrape.test:intelligrape-site-cq-view:content-package:1.0.0-SNAPSHOT -> jcr_root/etc/packages/com.intelligrape.test/intelligrape-site-cq-view-1.0.0-SNAPSHOT.zip
+[INFO] Embedding --- Sub Packages: groupId=com.cqblueprints.taglib,artifactId=cqblueprints-taglib-all,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.cqblueprints.taglib:cqblueprints-taglib-all:zip:5.5.1 -> jcr_root/etc/packages/com.cqblueprints.taglib/cqblueprints-taglib-all-5.5.1.zip
+[INFO] Embedding --- Sub Packages: groupId=com.adobe.acs,artifactId=acs-aem-commons-content,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.adobe.acs:acs-aem-commons-content:content-package:1.2.0 -> jcr_root/etc/packages/day_internal/consulting/acs-aem-commons-content-1.2.0.zip
+[INFO] Building jar: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-all/target/intelligrape-site-cq-all-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ intelligrape-site-cq-all ---
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-all/target/intelligrape-site-cq-all-1.0.0-SNAPSHOT.zip to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-all/1.0.0-SNAPSHOT/intelligrape-site-cq-all-1.0.0-SNAPSHOT.zip
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-all/pom.xml to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-all/1.0.0-SNAPSHOT/intelligrape-site-cq-all-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ intelligrape-site-cq-all ---
+[INFO] Installing intelligrape-site-cq-all (/home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-all/target/intelligrape-site-cq-all-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] intelligrape-site-cq-all, 1.0.0-SNAPSHOT (6664337 bytes)
+[INFO]     Created : Mon, 16 Dec 2013 16:20:04 +0530 by roni
+[INFO]     Modified: -
+[INFO]     Unpacked: Mon, 16 Dec 2013 16:08:58 +0530 by admin
+[INFO] 
+[INFO] Installing content...
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/intelligrape-site-cq/install/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar
+- /apps/intelligrape-site-cq/install/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.jar
+- /etc/packages/com.intelligrape.test/intelligrape-site-cq-config-1.0.0-SNAPSHOT.zip
+- /etc/packages/com.intelligrape.test/intelligrape-site-cq-view-1.0.0-SNAPSHOT.zip
+- /etc/packages/com.cqblueprints.taglib/cqblueprints-taglib-all-5.5.1.zip
+- /etc/packages/day_internal/consulting/acs-aem-commons-content-1.2.0.zip
+saving approx 0 nodes... 
+Package imported. 
+Starting extraction of subpackage com.intelligrape.test:intelligrape-site-cq-config:1.0.0-SNAPSHOT 
+Creating snapshot for package com.intelligrape.test:intelligrape-site-cq-config:1.0.0-SNAPSHOT 
+A META-INF
+A META-INF/vault
+A META-INF/vault/config.xml
+A META-INF/vault/filter.xml
+A META-INF/vault/nodetypes.cnd
+A META-INF/vault/properties.xml
+A /.content.xml
+A /apps
+A /apps/.content.xml
+A /apps/intelligrape-site-cq
+A /apps/intelligrape-site-cq/runmodes
+A /apps/intelligrape-site-cq/runmodes/config
+A /apps/intelligrape-site-cq/runmodes/config/org.apache.sling.commons.log.LogManager.factory.config-intelligrape.xml
+- Aggregation status: 5 of 3 prepared, 4 collected
+A META-INF/vault/definition/.content.xml
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/intelligrape-site-cq/runmodes/config/org.apache.sling.commons.log.LogManager.factory.config-intelligrape
+saving approx 0 nodes... 
+Package imported. 
+Starting extraction of subpackage com.intelligrape.test:intelligrape-site-cq-view:1.0.0-SNAPSHOT 
+Creating snapshot for package com.intelligrape.test:intelligrape-site-cq-view:1.0.0-SNAPSHOT 
+A META-INF
+A META-INF/vault
+A META-INF/vault/config.xml
+A META-INF/vault/filter.xml
+A META-INF/vault/nodetypes.cnd
+A META-INF/vault/properties.xml
+A /.content.xml
+A /etc
+A /etc/.content.xml
+A /etc/designs
+A /etc/designs/.content.xml
+A /etc/designs/intelligrape-site-cq
+A /etc/designs/intelligrape-site-cq/.content.xml
+A /etc/designs/intelligrape-site-cq/favicon.ico
+A /etc/designs/intelligrape-site-cq/static.css
+A /etc/clientlibs
+A /etc/clientlibs/.content.xml
+A /apps
+A /apps/.content.xml
+A /apps/intelligrape-site-cq
+A /apps/intelligrape-site-cq/components
+A /apps/intelligrape-site-cq/components/content
+A /apps/intelligrape-site-cq/components/content/listslide
+A /apps/intelligrape-site-cq/components/content/listslide/.content.xml
+A /apps/intelligrape-site-cq/components/content/listslide/listslide.jsp
+A /apps/intelligrape-site-cq/components/content/listslide/dialog.xml
+A /apps/intelligrape-site-cq/components/content/searchcomponent
+A /apps/intelligrape-site-cq/components/content/searchcomponent/.content.xml
+A /apps/intelligrape-site-cq/components/content/searchcomponent/dialog.xml
+A /apps/intelligrape-site-cq/components/content/searchcomponent/searchcomponent.jsp
+A /apps/intelligrape-site-cq/components/content/herocontainer
+A /apps/intelligrape-site-cq/components/content/herocontainer/.content.xml
+A /apps/intelligrape-site-cq/components/content/herocontainer/dialog.xml
+A /apps/intelligrape-site-cq/components/content/herocontainer/herocontainer.jsp
+A /apps/intelligrape-site-cq/components/content/searchresult
+A /apps/intelligrape-site-cq/components/content/searchresult/.content.xml
+A /apps/intelligrape-site-cq/components/content/searchresult/searchresult.jsp
+A /apps/intelligrape-site-cq/components/content/searchresult/dialog.xml
+A /apps/intelligrape-site-cq/components/content/HeroCarousel
+A /apps/intelligrape-site-cq/components/content/HeroCarousel/.content.xml
+A /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog.xml
+A /apps/intelligrape-site-cq/components/content/HeroCarousel/carousel.jsp
+A /apps/intelligrape-site-cq/components/content/textimgslide
+A /apps/intelligrape-site-cq/components/content/textimgslide/.content.xml
+A /apps/intelligrape-site-cq/components/content/textimgslide/textimgslide.jsp
+A /apps/intelligrape-site-cq/components/content/textimgslide/dialog.xml
+A /apps/intelligrape-site-cq/components/content/textimgslide/_cq_editConfig.xml
+A /apps/intelligrape-site-cq/components/content/listcontainer
+A /apps/intelligrape-site-cq/components/content/listcontainer/.content.xml
+A /apps/intelligrape-site-cq/components/content/listcontainer/dialog.xml
+A /apps/intelligrape-site-cq/components/content/listcontainer/listcontainer.jsp
+A /apps/intelligrape-site-cq/components/content/textimage
+A /apps/intelligrape-site-cq/components/content/textimage/.content.xml
+A /apps/intelligrape-site-cq/components/content/textimage/clientlibs
+A /apps/intelligrape-site-cq/components/content/textimage/clientlibs/.content.xml
+A /apps/intelligrape-site-cq/components/content/textimage/clientlibs/textimage.css
+A /apps/intelligrape-site-cq/components/content/textimage/clientlibs/css.txt
+A /apps/intelligrape-site-cq/components/content/textimage/icon.png
+A /apps/intelligrape-site-cq/components/content/textimage/textimage.jsp
+A /apps/intelligrape-site-cq/components/content/textimage/dialog.xml
+A /apps/intelligrape-site-cq/components/content/textimage/_cq_editConfig.xml
+A /apps/intelligrape-site-cq/components/content/teaserComponent
+A /apps/intelligrape-site-cq/components/content/teaserComponent/.content.xml
+A /apps/intelligrape-site-cq/components/content/teaserComponent/teaserComponent.jsp
+A /apps/intelligrape-site-cq/components/content/teaserComponent/dialog.xml
+A /apps/intelligrape-site-cq/components/content/MarqueeImage
+A /apps/intelligrape-site-cq/components/content/MarqueeImage/.content.xml
+A /apps/intelligrape-site-cq/components/content/MarqueeImage/MarqueeImage.jsp
+A /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog.xml
+A /apps/intelligrape-site-cq/components/content/logo
+A /apps/intelligrape-site-cq/components/content/logo/.content.xml
+A /apps/intelligrape-site-cq/components/content/logo/img.GET.java
+A /apps/intelligrape-site-cq/components/content/logo/logo.jsp
+A /apps/intelligrape-site-cq/components/content/logo/design_dialog.xml
+A /apps/intelligrape-site-cq/components/sample
+A /apps/intelligrape-site-cq/components/sample/html.jsp
+A /apps/intelligrape-site-cq/components/page
+A /apps/intelligrape-site-cq/components/page/testPage
+A /apps/intelligrape-site-cq/components/page/testPage/.content.xml
+A /apps/intelligrape-site-cq/components/page/testPage/head.jsp
+A /apps/intelligrape-site-cq/components/page/testPage/testPage.jsp
+A /apps/intelligrape-site-cq/components/page/testPage/footer.jsp
+A /apps/intelligrape-site-cq/components/page/groovy
+A /apps/intelligrape-site-cq/components/page/groovy/.content.xml
+A /apps/intelligrape-site-cq/components/page/groovy/groovy.jsp
+A /apps/intelligrape-site-cq/components/page/global.jsp
+A /apps/intelligrape-site-cq/components/page/HomePage
+A /apps/intelligrape-site-cq/components/page/HomePage/.content.xml
+A /apps/intelligrape-site-cq/components/page/HomePage/body.jsp
+A /apps/intelligrape-site-cq/components/page/HomePage/HomePage.jsp
+A /apps/intelligrape-site-cq/components/page/HomePage/Header.jsp
+A /apps/intelligrape-site-cq/components/page/HomePage/content.jsp
+A /apps/intelligrape-site-cq/components/page/HomePage/Footer.jsp
+A /apps/intelligrape-site-cq/components/examplecomponent2
+A /apps/intelligrape-site-cq/components/examplecomponent2/.content.xml
+A /apps/intelligrape-site-cq/components/examplecomponent2/dialog.xml
+A /apps/intelligrape-site-cq/components/examplecomponent2/examplecomponent2.jspx
+A /apps/intelligrape-site-cq/components/examplepage
+A /apps/intelligrape-site-cq/components/examplepage/.content.xml
+A /apps/intelligrape-site-cq/components/examplepage/body.jsp
+A /apps/intelligrape-site-cq/components/examplecomponent
+A /apps/intelligrape-site-cq/components/examplecomponent/.content.xml
+A /apps/intelligrape-site-cq/components/examplecomponent/examplecomponent.jsp
+A /apps/intelligrape-site-cq/components/examplecomponent/dialog.xml
+A /apps/intelligrape-site-cq/components/global.jspx
+A /apps/intelligrape-site-cq/components/init.jsp
+A /apps/intelligrape-site-cq/templates
+A /apps/intelligrape-site-cq/templates/exampletemplate
+A /apps/intelligrape-site-cq/templates/exampletemplate/.content.xml
+A /apps/intelligrape-site-cq/templates/groovyPage
+A /apps/intelligrape-site-cq/templates/groovyPage/.content.xml
+A /apps/intelligrape-site-cq/templates/HomePage
+A /apps/intelligrape-site-cq/templates/HomePage/.content.xml
+A /apps/intelligrape-site-cq/templates/testtemplate
+A /apps/intelligrape-site-cq/templates/testtemplate/.content.xml
+- Aggregation status: 81 of 76 prepared, 79 collected
+A META-INF/vault/definition/.content.xml
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/intelligrape-site-cq/components/content/listslide
+- /apps/intelligrape-site-cq/components/content/listslide/listslide.jsp
+- /apps/intelligrape-site-cq/components/content/listslide/dialog
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/image
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/link
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/image/items
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/image/items/logoReqType
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/image/items/logoimage
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/link/items
+- /apps/intelligrape-site-cq/components/content/listslide/dialog/items/items/link/items/linkPath
+- /apps/intelligrape-site-cq/components/content/searchcomponent
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items/items/search
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items/items/search/items
+- /apps/intelligrape-site-cq/components/content/searchcomponent/dialog/items/items/search/items/searchpath
+- /apps/intelligrape-site-cq/components/content/searchcomponent/searchcomponent.jsp
+- /apps/intelligrape-site-cq/components/content/textimage
+- /apps/intelligrape-site-cq/components/content/textimage/clientlibs
+- /apps/intelligrape-site-cq/components/content/textimage/clientlibs/textimage.css
+- /apps/intelligrape-site-cq/components/content/textimage/clientlibs/css.txt
+- /apps/intelligrape-site-cq/components/content/textimage/icon.png
+- /apps/intelligrape-site-cq/components/content/textimage/textimage.jsp
+- /apps/intelligrape-site-cq/components/content/textimage/dialog
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab2
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab4
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/richFlag
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items/enable
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items/evars
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items/events
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab1/items/text/rtePlugins/links/linkDialogConfig/linkAttributes/linkAdvanced/items/enable/listeners
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/alt
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/description
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/linkURL
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/resType
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/size
+- /apps/intelligrape-site-cq/components/content/textimage/dialog/items/tab3/items/title
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:dropTargets
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:inplaceEditing
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:dropTargets/image
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:dropTargets/image/parameters
+- /apps/intelligrape-site-cq/components/content/textimage/cq:editConfig/cq:dropTargets/image/parameters/image
+- /apps/intelligrape-site-cq/components/content/herocontainer
+- /apps/intelligrape-site-cq/components/content/herocontainer/dialog
+- /apps/intelligrape-site-cq/components/content/herocontainer/herocontainer.jsp
+- /apps/intelligrape-site-cq/components/content/searchresult
+- /apps/intelligrape-site-cq/components/content/searchresult/searchresult.jsp
+- /apps/intelligrape-site-cq/components/content/searchresult/dialog
+- /apps/intelligrape-site-cq/components/content/HeroCarousel
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/children
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/querybuilder
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/playSpeed
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/transTime
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o1
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o2
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o3
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o4
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o5
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o6
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o7
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/carousel/items/type/options/o8
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/children/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/children/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/children/items/parentPage
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel/items/image
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/herocarousel/items/img
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/limit
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/children
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/heroCarousel
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/querybuilder
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/search
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/listFrom/options/static
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options/created
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options/modified
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options/template
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/list/items/orderBy/options/title
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/querybuilder/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/querybuilder/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/querybuilder/items/savedquery
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search/items/query
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/search/items/searchIn
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static/items
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static/listeners
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static/items/pages
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/dialog/items/static/items/pages/fieldConfig
+- /apps/intelligrape-site-cq/components/content/HeroCarousel/carousel.jsp
+- /apps/intelligrape-site-cq/components/content/teaserComponent
+- /apps/intelligrape-site-cq/components/content/teaserComponent/teaserComponent.jsp
+- /apps/intelligrape-site-cq/components/content/teaserComponent/dialog
+- /apps/intelligrape-site-cq/components/content/teaserComponent/dialog/items
+- /apps/intelligrape-site-cq/components/content/teaserComponent/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/teaserComponent/dialog/items/items/tab1
+- /apps/intelligrape-site-cq/components/content/MarqueeImage
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/MarqueeImage.jsp
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type/listeners
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type/options
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type/options/carousel
+- /apps/intelligrape-site-cq/components/content/MarqueeImage/dialog/items/items/tab1/items/Action Type/options/marquee
+- /apps/intelligrape-site-cq/components/content/textimgslide
+- /apps/intelligrape-site-cq/components/content/textimgslide/textimgslide.jsp
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/text
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items/mainResType
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items/mainimg
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items/thumbResType
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/image/items/thumbimg
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/text/items
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/text/items/imgtext
+- /apps/intelligrape-site-cq/components/content/textimgslide/dialog/items/items/text/items/thumbtext
+- /apps/intelligrape-site-cq/components/content/textimgslide/cq:editConfig
+- /apps/intelligrape-site-cq/components/content/listcontainer
+- /apps/intelligrape-site-cq/components/content/listcontainer/dialog
+- /apps/intelligrape-site-cq/components/content/listcontainer/dialog/items
+- /apps/intelligrape-site-cq/components/content/listcontainer/dialog/items/items
+- /apps/intelligrape-site-cq/components/content/listcontainer/listcontainer.jsp
+- /apps/intelligrape-site-cq/components/content/logo
+- /apps/intelligrape-site-cq/components/content/logo/img.GET.java
+- /apps/intelligrape-site-cq/components/content/logo/logo.jsp
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/img
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic/items
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic/items/absParent
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic/items/imgWidth
+- /apps/intelligrape-site-cq/components/content/logo/design_dialog/items/basic/items/margin
+- /apps/intelligrape-site-cq/components/sample/html.jsp
+- /apps/intelligrape-site-cq/components/page/testPage
+- /apps/intelligrape-site-cq/components/page/testPage/head.jsp
+- /apps/intelligrape-site-cq/components/page/testPage/testPage.jsp
+- /apps/intelligrape-site-cq/components/page/testPage/footer.jsp
+- /apps/intelligrape-site-cq/components/page/groovy
+- /apps/intelligrape-site-cq/components/page/groovy/groovy.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage
+- /apps/intelligrape-site-cq/components/page/HomePage/body.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage/HomePage.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage/Header.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage/content.jsp
+- /apps/intelligrape-site-cq/components/page/HomePage/Footer.jsp
+- /apps/intelligrape-site-cq/components/page/global.jsp
+- /apps/intelligrape-site-cq/components/examplecomponent2
+- /apps/intelligrape-site-cq/components/examplecomponent2/dialog
+- /apps/intelligrape-site-cq/components/examplecomponent2/dialog/items
+- /apps/intelligrape-site-cq/components/examplecomponent2/dialog/items/items
+- /apps/intelligrape-site-cq/components/examplecomponent2/dialog/items/items/tab1
+- /apps/intelligrape-site-cq/components/examplecomponent2/examplecomponent2.jspx
+- /apps/intelligrape-site-cq/components/examplepage
+- /apps/intelligrape-site-cq/components/examplepage/body.jsp
+- /apps/intelligrape-site-cq/components/examplecomponent
+- /apps/intelligrape-site-cq/components/examplecomponent/examplecomponent.jsp
+- /apps/intelligrape-site-cq/components/examplecomponent/dialog
+- /apps/intelligrape-site-cq/components/examplecomponent/dialog/items
+- /apps/intelligrape-site-cq/components/examplecomponent/dialog/items/items
+- /apps/intelligrape-site-cq/components/examplecomponent/dialog/items/items/tab1
+- /apps/intelligrape-site-cq/components/init.jsp
+- /apps/intelligrape-site-cq/components/global.jspx
+- /apps/intelligrape-site-cq/templates/groovyPage
+- /apps/intelligrape-site-cq/templates/groovyPage/jcr:content
+- /apps/intelligrape-site-cq/templates/exampletemplate
+- /apps/intelligrape-site-cq/templates/exampletemplate/jcr:content
+- /apps/intelligrape-site-cq/templates/testtemplate
+- /apps/intelligrape-site-cq/templates/testtemplate/jcr:content
+- /apps/intelligrape-site-cq/templates/HomePage
+- /apps/intelligrape-site-cq/templates/HomePage/jcr:content
+- /etc/designs/intelligrape-site-cq
+- /etc/designs/intelligrape-site-cq/static.css
+- /etc/designs/intelligrape-site-cq/favicon.ico
+saving approx 0 nodes... 
+Package imported. 
+Starting extraction of subpackage day_internal/consulting:acs-aem-commons-content:1.2.0 
+Creating snapshot for package day_internal/consulting:acs-aem-commons-content:1.2.0 
+A META-INF
+A META-INF/vault
+A META-INF/vault/config.xml
+A META-INF/vault/filter.xml
+A META-INF/vault/nodetypes.cnd
+A META-INF/vault/properties.xml
+A /.content.xml
+A /etc
+A /etc/.content.xml
+A /etc/designs
+A /etc/designs/.content.xml
+A /etc/designs/acs-commons
+A /etc/designs/acs-commons/.content.xml
+A /etc/clientlibs
+A /etc/clientlibs/.content.xml
+A /etc/clientlibs/acs-commons
+A /etc/clientlibs/acs-commons/coralui-wrapped
+A /etc/clientlibs/acs-commons/coralui-wrapped/.content.xml
+A /etc/clientlibs/acs-commons/coralui-wrapped/css.txt
+A /etc/clientlibs/acs-commons/main
+A /etc/clientlibs/acs-commons/main/.content.xml
+A /etc/clientlibs/acs-commons/main/css.txt
+A /etc/clientlibs/acs-commons/main/js.txt
+A /etc/cloudservices
+A /etc/cloudservices/.content.xml
+A /etc/cloudservices/typekit
+A /etc/cloudservices/typekit/.content.xml
+A /etc/cloudservices/dtm
+A /etc/cloudservices/dtm/.content.xml
+A /etc/dam
+A /etc/dam/.content.xml
+A /etc/dam/video
+A /etc/dam/video/.content.xml
+A /etc/dam/video/mp3hq
+A /etc/dam/video/mp3hq/.content.xml
+A /etc/dam/video/ogghq
+A /etc/dam/video/ogghq/.content.xml
+A /etc/acs-commons
+A /etc/acs-commons/twitter-rate-limit-checker
+A /etc/acs-commons/twitter-rate-limit-checker/.content.xml
+A /apps
+A /apps/.content.xml
+A /apps/acs-commons
+A /apps/acs-commons/components
+A /apps/acs-commons/components/content
+A /apps/acs-commons/components/content/audio
+A /apps/acs-commons/components/content/audio/.content.xml
+A /apps/acs-commons/components/content/audio/partials
+A /apps/acs-commons/components/content/audio/partials/fallback.jsp
+A /apps/acs-commons/components/content/audio/partials/init.jsp
+A /apps/acs-commons/components/content/audio/_cq_editConfig.xml
+A /apps/acs-commons/components/content/audio/audio.jsp
+A /apps/acs-commons/components/content/audio/design_dialog.xml
+A /apps/acs-commons/components/content/audio/designtab_audio.xml
+A /apps/acs-commons/components/content/audio/designtab_playback.xml
+A /apps/acs-commons/components/content/audio/designtab_profiles.xml
+A /apps/acs-commons/components/content/audio/dialog.xml
+A /apps/acs-commons/components/content/audio/icon.png
+A /apps/acs-commons/components/content/base
+A /apps/acs-commons/components/content/base/ajax
+A /apps/acs-commons/components/content/base/ajax/.content.xml
+A /apps/acs-commons/components/content/base/ajax/clientlibs
+A /apps/acs-commons/components/content/base/ajax/clientlibs/.content.xml
+A /apps/acs-commons/components/content/base/ajax/clientlibs/css
+A /apps/acs-commons/components/content/base/ajax/clientlibs/css/ajax.css
+A /apps/acs-commons/components/content/base/ajax/clientlibs/js
+A /apps/acs-commons/components/content/base/ajax/clientlibs/js/ajax.js
+A /apps/acs-commons/components/content/base/ajax/clientlibs/css.txt
+A /apps/acs-commons/components/content/base/ajax/clientlibs/js.txt
+A /apps/acs-commons/components/content/base/ajax/ajax.jsp
+A /apps/acs-commons/components/content/generic-text
+A /apps/acs-commons/components/content/generic-text/.content.xml
+A /apps/acs-commons/components/content/generic-text/_cq_editConfig.xml
+A /apps/acs-commons/components/content/generic-text/dialog.xml
+A /apps/acs-commons/components/utilities
+A /apps/acs-commons/components/utilities/component-error-handler
+A /apps/acs-commons/components/utilities/component-error-handler/.content.xml
+A /apps/acs-commons/components/utilities/component-error-handler/edit.html
+A /apps/acs-commons/components/utilities/component-error-handler/preview.html
+A /apps/acs-commons/components/utilities/designer
+A /apps/acs-commons/components/utilities/designer/.content.xml
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/.content.xml
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibs
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibs/.content.xml
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibs/less
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibs/less/clientlibsmanager.less
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibs/css.txt
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/_cq_editConfig.xml
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibsmanager.jsp
+A /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog.xml
+A /apps/acs-commons/components/utilities/designer/designer.jsp
+A /apps/acs-commons/components/utilities/dispatcher-flush
+A /apps/acs-commons/components/utilities/dispatcher-flush/.content.xml
+A /apps/acs-commons/components/utilities/dispatcher-flush/configuration
+A /apps/acs-commons/components/utilities/dispatcher-flush/configuration/.content.xml
+A /apps/acs-commons/components/utilities/dispatcher-flush/configuration/_cq_editConfig.xml
+A /apps/acs-commons/components/utilities/dispatcher-flush/configuration/configuration.jsp
+A /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog.xml
+A /apps/acs-commons/components/utilities/dispatcher-flush/main.jsp
+A /apps/acs-commons/components/utilities/dtm
+A /apps/acs-commons/components/utilities/dtm/.content.xml
+A /apps/acs-commons/components/utilities/dtm/dtm.jsp
+A /apps/acs-commons/components/utilities/dtm/headlibs.jsp
+A /apps/acs-commons/components/utilities/dtmpage
+A /apps/acs-commons/components/utilities/dtmpage/.content.xml
+A /apps/acs-commons/components/utilities/dtmpage/content.jsp
+A /apps/acs-commons/components/utilities/dtmpage/dialog.xml
+A /apps/acs-commons/components/utilities/errorpagehandler
+A /apps/acs-commons/components/utilities/errorpagehandler/.content.xml
+A /apps/acs-commons/components/utilities/errorpagehandler/preview
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/.content.xml
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/css
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/css/errorpagehandler.css
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/js
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/js/errorpagehandler.js
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/css.txt
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/js.txt
+A /apps/acs-commons/components/utilities/errorpagehandler/preview/errormessage.jsp
+A /apps/acs-commons/components/utilities/errorpagehandler/404.jsp
+A /apps/acs-commons/components/utilities/errorpagehandler/default.jsp
+A /apps/acs-commons/components/utilities/errorpagehandler/dialog.xml
+A /apps/acs-commons/components/utilities/genericlist
+A /apps/acs-commons/components/utilities/genericlist/.content.xml
+A /apps/acs-commons/components/utilities/genericlist/item
+A /apps/acs-commons/components/utilities/genericlist/item/.content.xml
+A /apps/acs-commons/components/utilities/genericlist/item/dialog.xml
+A /apps/acs-commons/components/utilities/genericlist/item/item.jsp
+A /apps/acs-commons/components/utilities/genericlist/body.jsp
+A /apps/acs-commons/components/utilities/genericlist/headlibs.jsp
+A /apps/acs-commons/components/utilities/genericlist/list.json.jsp
+A /apps/acs-commons/components/utilities/page
+A /apps/acs-commons/components/utilities/page/.content.xml
+A /apps/acs-commons/components/utilities/page/clientlibs
+A /apps/acs-commons/components/utilities/page/clientlibs/.content.xml
+A /apps/acs-commons/components/utilities/page/clientlibs/css
+A /apps/acs-commons/components/utilities/page/clientlibs/css/page.less
+A /apps/acs-commons/components/utilities/page/clientlibs/css.txt
+A /apps/acs-commons/components/utilities/page/page.jsp
+A /apps/acs-commons/components/utilities/twitter-rate-limit-checker
+A /apps/acs-commons/components/utilities/twitter-rate-limit-checker/.content.xml
+A /apps/acs-commons/components/utilities/twitter-rate-limit-checker/body.jsp
+A /apps/acs-commons/components/utilities/twitter-rate-limit-checker/head.jsp
+A /apps/acs-commons/components/utilities/twitter-rate-limit-checker/headlibs.jsp
+A /apps/acs-commons/components/utilities/typekit
+A /apps/acs-commons/components/utilities/typekit/.content.xml
+A /apps/acs-commons/components/utilities/typekit/headlibs.jsp
+A /apps/acs-commons/components/utilities/typekit/typekit.jsp
+A /apps/acs-commons/components/utilities/typekitpage
+A /apps/acs-commons/components/utilities/typekitpage/.content.xml
+A /apps/acs-commons/components/utilities/typekitpage/content.jsp
+A /apps/acs-commons/components/utilities/typekitpage/dialog.xml
+A /apps/acs-commons/config
+A /apps/acs-commons/config/put-your-configs-here.txt
+A /apps/acs-commons/extensions
+A /apps/acs-commons/extensions/contentfinder
+A /apps/acs-commons/extensions/contentfinder/.content.xml
+A /apps/acs-commons/extensions/contentfinder/audio.js
+A /apps/acs-commons/install
+A /apps/acs-commons/install/bundle-will-go-here.txt
+A /apps/acs-commons/install/acs-aem-commons-bundle-1.2.0.jar
+A /apps/acs-commons/templates
+A /apps/acs-commons/templates/utilities
+A /apps/acs-commons/templates/utilities/dispatcher-flush
+A /apps/acs-commons/templates/utilities/dispatcher-flush/.content.xml
+A /apps/acs-commons/templates/utilities/dispatcher-flush/thumbnail.png
+A /apps/acs-commons/templates/utilities/dtm
+A /apps/acs-commons/templates/utilities/dtm/.content.xml
+A /apps/acs-commons/templates/utilities/dtm/thumbnail.png
+A /apps/acs-commons/templates/utilities/genericlist
+A /apps/acs-commons/templates/utilities/genericlist/.content.xml
+A /apps/acs-commons/templates/utilities/genericlist/thumbnail.png
+A /apps/acs-commons/templates/utilities/typekit
+A /apps/acs-commons/templates/utilities/typekit/.content.xml
+A /apps/acs-commons/templates/utilities/typekit/thumbnail.png
+A /apps/acs-commons/widgets
+A /apps/acs-commons/widgets/.content.xml
+A /apps/acs-commons/widgets/source
+A /apps/acs-commons/widgets/source/predicates
+A /apps/acs-commons/widgets/source/predicates/AuthorizablePredicate.js
+A /apps/acs-commons/widgets/source/predicates/PathPropertyPredicate.js
+A /apps/acs-commons/widgets/source/predicates/SelectionPredicate.js
+A /apps/acs-commons/widgets/source/add_multifield_limit.js
+A /apps/acs-commons/widgets/source/create_namespace.js
+A /apps/acs-commons/widgets/source/DDPathField.js
+A /apps/acs-commons/widgets/source/polyfill_composite_field_processParentRecord.js
+A /apps/acs-commons/widgets/themes
+A /apps/acs-commons/widgets/themes/default
+A /apps/acs-commons/widgets/themes/default/.content.xml
+A /apps/acs-commons/widgets/themes/default/source
+A /apps/acs-commons/widgets/themes/default/source/audio.css
+A /apps/acs-commons/widgets/themes/default/source/audio.png
+A /apps/acs-commons/widgets/themes/default/css.txt
+A /apps/acs-commons/widgets/js.txt
+- Aggregation status: 145 of 137 prepared, 143 collected
+A META-INF/vault/definition/.content.xml
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/acs-commons/components/content/audio
+- /apps/acs-commons/components/content/audio/partials/fallback.jsp
+- /apps/acs-commons/components/content/audio/partials/init.jsp
+- /apps/acs-commons/components/content/audio/cq:editConfig
+- /apps/acs-commons/components/content/audio/cq:editConfig/cq:dropTargets
+- /apps/acs-commons/components/content/audio/cq:editConfig/cq:dropTargets/video
+- /apps/acs-commons/components/content/audio/cq:editConfig/cq:dropTargets/video/parameters
+- /apps/acs-commons/components/content/audio/audio.jsp
+- /apps/acs-commons/components/content/audio/design_dialog
+- /apps/acs-commons/components/content/audio/design_dialog/items
+- /apps/acs-commons/components/content/audio/design_dialog/items/tabs
+- /apps/acs-commons/components/content/audio/design_dialog/items/tabs/items
+- /apps/acs-commons/components/content/audio/design_dialog/items/tabs/items/audio
+- /apps/acs-commons/components/content/audio/design_dialog/items/tabs/items/playback
+- /apps/acs-commons/components/content/audio/design_dialog/items/tabs/items/profiles
+- /apps/acs-commons/components/content/audio/designtab_audio
+- /apps/acs-commons/components/content/audio/designtab_audio/items
+- /apps/acs-commons/components/content/audio/designtab_audio/items/audioClass
+- /apps/acs-commons/components/content/audio/designtab_audio/items/fallbackMessage
+- /apps/acs-commons/components/content/audio/designtab_playback
+- /apps/acs-commons/components/content/audio/designtab_playback/items
+- /apps/acs-commons/components/content/audio/designtab_playback/items/autoplay
+- /apps/acs-commons/components/content/audio/designtab_playback/items/loop
+- /apps/acs-commons/components/content/audio/designtab_playback/items/noControls
+- /apps/acs-commons/components/content/audio/designtab_playback/items/preload
+- /apps/acs-commons/components/content/audio/designtab_playback/items/preload/options
+- /apps/acs-commons/components/content/audio/designtab_playback/items/preload/options/auto
+- /apps/acs-commons/components/content/audio/designtab_playback/items/preload/options/empty
+- /apps/acs-commons/components/content/audio/designtab_playback/items/preload/options/metadata
+- /apps/acs-commons/components/content/audio/designtab_playback/items/preload/options/none
+- /apps/acs-commons/components/content/audio/designtab_profiles
+- /apps/acs-commons/components/content/audio/designtab_profiles/items
+- /apps/acs-commons/components/content/audio/designtab_profiles/items/profiles
+- /apps/acs-commons/components/content/audio/designtab_profiles/items/profiles/fieldConfig
+- /apps/acs-commons/components/content/audio/dialog
+- /apps/acs-commons/components/content/audio/dialog/items
+- /apps/acs-commons/components/content/audio/dialog/items/asset
+- /apps/acs-commons/components/content/audio/dialog/items/asset/items
+- /apps/acs-commons/components/content/audio/dialog/items/asset/items/file
+- /apps/acs-commons/components/content/audio/icon.png
+- /apps/acs-commons/components/content/base/ajax
+- /apps/acs-commons/components/content/base/ajax/clientlibs
+- /apps/acs-commons/components/content/base/ajax/clientlibs/css/ajax.css
+- /apps/acs-commons/components/content/base/ajax/clientlibs/js/ajax.js
+- /apps/acs-commons/components/content/base/ajax/clientlibs/css.txt
+- /apps/acs-commons/components/content/base/ajax/clientlibs/js.txt
+- /apps/acs-commons/components/content/base/ajax/ajax.jsp
+- /apps/acs-commons/components/content/generic-text
+- /apps/acs-commons/components/content/generic-text/cq:editConfig
+- /apps/acs-commons/components/content/generic-text/cq:editConfig/cq:inplaceEditing
+- /apps/acs-commons/components/content/generic-text/dialog
+- /apps/acs-commons/components/content/generic-text/dialog/items
+- /apps/acs-commons/components/content/generic-text/dialog/items/tab1
+- /apps/acs-commons/components/content/generic-text/dialog/items/tab2
+- /apps/acs-commons/components/content/generic-text/dialog/items/tab1/items
+- /apps/acs-commons/components/content/generic-text/dialog/items/tab1/items/isRichTextFlag
+- /apps/acs-commons/components/content/generic-text/dialog/items/tab1/items/text
+- /apps/acs-commons/components/utilities/component-error-handler
+- /apps/acs-commons/components/utilities/component-error-handler/edit.html
+- /apps/acs-commons/components/utilities/component-error-handler/preview.html
+- /apps/acs-commons/components/utilities/designer
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibs
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibs/less/clientlibsmanager.less
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibs/css.txt
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/cq:editConfig
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/clientlibsmanager.jsp
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/body-libs
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/head-libs
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/body-libs/items
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/body-libs/items/js
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/body-libs/items/js/fieldConfig
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/head-libs/items
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/head-libs/items/css
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/head-libs/items/js
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/head-libs/items/css/fieldConfig
+- /apps/acs-commons/components/utilities/designer/clientlibsmanager/dialog/items/tab1/items/head-libs/items/js/fieldConfig
+- /apps/acs-commons/components/utilities/designer/designer.jsp
+- /apps/acs-commons/components/utilities/dispatcher-flush
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/cq:editConfig
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/configuration.jsp
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items/tab1
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items/tab1/items
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items/tab1/items/paths
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items/tab1/items/replicationactiontype
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items/tab1/items/paths/fieldConfig
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items/tab1/items/replicationactiontype/options
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items/tab1/items/replicationactiontype/options/activate
+- /apps/acs-commons/components/utilities/dispatcher-flush/configuration/dialog/items/tab1/items/replicationactiontype/options/delete
+- /apps/acs-commons/components/utilities/dispatcher-flush/main.jsp
+- /apps/acs-commons/components/utilities/dtm
+- /apps/acs-commons/components/utilities/dtm/dtm.jsp
+- /apps/acs-commons/components/utilities/dtm/headlibs.jsp
+- /apps/acs-commons/components/utilities/dtmpage
+- /apps/acs-commons/components/utilities/dtmpage/content.jsp
+- /apps/acs-commons/components/utilities/dtmpage/dialog
+- /apps/acs-commons/components/utilities/dtmpage/dialog/items
+- /apps/acs-commons/components/utilities/dtmpage/dialog/items/general
+- /apps/acs-commons/components/utilities/dtmpage/dialog/items/general/items
+- /apps/acs-commons/components/utilities/dtmpage/dialog/items/general/items/header
+- /apps/acs-commons/components/utilities/dtmpage/dialog/items/general/items/snippet
+- /apps/acs-commons/components/utilities/errorpagehandler
+- /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs
+- /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/css/errorpagehandler.css
+- /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/js/errorpagehandler.js
+- /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/css.txt
+- /apps/acs-commons/components/utilities/errorpagehandler/preview/clientlibs/js.txt
+- /apps/acs-commons/components/utilities/errorpagehandler/preview/errormessage.jsp
+- /apps/acs-commons/components/utilities/errorpagehandler/404.jsp
+- /apps/acs-commons/components/utilities/errorpagehandler/default.jsp
+- /apps/acs-commons/components/utilities/errorpagehandler/dialog
+- /apps/acs-commons/components/utilities/errorpagehandler/dialog/errorpages
+- /apps/acs-commons/components/utilities/genericlist
+- /apps/acs-commons/components/utilities/genericlist/item
+- /apps/acs-commons/components/utilities/genericlist/item/dialog
+- /apps/acs-commons/components/utilities/genericlist/item/dialog/items
+- /apps/acs-commons/components/utilities/genericlist/item/dialog/items/title
+- /apps/acs-commons/components/utilities/genericlist/item/dialog/items/value
+- /apps/acs-commons/components/utilities/genericlist/item/item.jsp
+- /apps/acs-commons/components/utilities/genericlist/body.jsp
+- /apps/acs-commons/components/utilities/genericlist/headlibs.jsp
+- /apps/acs-commons/components/utilities/genericlist/list.json.jsp
+- /apps/acs-commons/components/utilities/page
+- /apps/acs-commons/components/utilities/page/clientlibs
+- /apps/acs-commons/components/utilities/page/clientlibs/css/page.less
+- /apps/acs-commons/components/utilities/page/clientlibs/css.txt
+- /apps/acs-commons/components/utilities/page/page.jsp
+- /apps/acs-commons/components/utilities/twitter-rate-limit-checker
+- /apps/acs-commons/components/utilities/twitter-rate-limit-checker/body.jsp
+- /apps/acs-commons/components/utilities/twitter-rate-limit-checker/head.jsp
+- /apps/acs-commons/components/utilities/twitter-rate-limit-checker/headlibs.jsp
+- /apps/acs-commons/components/utilities/typekit
+- /apps/acs-commons/components/utilities/typekit/headlibs.jsp
+- /apps/acs-commons/components/utilities/typekit/typekit.jsp
+- /apps/acs-commons/components/utilities/typekitpage
+- /apps/acs-commons/components/utilities/typekitpage/content.jsp
+- /apps/acs-commons/components/utilities/typekitpage/dialog
+- /apps/acs-commons/components/utilities/typekitpage/dialog/items
+- /apps/acs-commons/components/utilities/typekitpage/dialog/items/general
+- /apps/acs-commons/components/utilities/typekitpage/dialog/items/general/items
+- /apps/acs-commons/components/utilities/typekitpage/dialog/items/general/items/snippet
+- /apps/acs-commons/config/put-your-configs-here.txt
+- /apps/acs-commons/extensions/contentfinder
+- /apps/acs-commons/extensions/contentfinder/audio.js
+- /apps/acs-commons/install/bundle-will-go-here.txt
+- /apps/acs-commons/install/acs-aem-commons-bundle-1.2.0.jar
+- /apps/acs-commons/templates/utilities/dispatcher-flush
+- /apps/acs-commons/templates/utilities/dispatcher-flush/jcr:content
+- /apps/acs-commons/templates/utilities/dispatcher-flush/thumbnail.png
+- /apps/acs-commons/templates/utilities/dtm
+- /apps/acs-commons/templates/utilities/dtm/jcr:content
+- /apps/acs-commons/templates/utilities/dtm/thumbnail.png
+- /apps/acs-commons/templates/utilities/genericlist
+- /apps/acs-commons/templates/utilities/genericlist/jcr:content
+- /apps/acs-commons/templates/utilities/genericlist/thumbnail.png
+- /apps/acs-commons/templates/utilities/typekit
+- /apps/acs-commons/templates/utilities/typekit/jcr:content
+- /apps/acs-commons/templates/utilities/typekit/thumbnail.png
+- /apps/acs-commons/widgets
+- /apps/acs-commons/widgets/source/predicates/AuthorizablePredicate.js
+- /apps/acs-commons/widgets/source/predicates/PathPropertyPredicate.js
+- /apps/acs-commons/widgets/source/predicates/SelectionPredicate.js
+- /apps/acs-commons/widgets/source/add_multifield_limit.js
+- /apps/acs-commons/widgets/source/create_namespace.js
+- /apps/acs-commons/widgets/source/DDPathField.js
+- /apps/acs-commons/widgets/source/polyfill_composite_field_processParentRecord.js
+- /apps/acs-commons/widgets/themes/default
+- /apps/acs-commons/widgets/themes/default/source/audio.css
+- /apps/acs-commons/widgets/themes/default/source/audio.png
+- /apps/acs-commons/widgets/themes/default/css.txt
+- /apps/acs-commons/widgets/js.txt
+- /etc/clientlibs/acs-commons/coralui-wrapped
+- /etc/clientlibs/acs-commons/coralui-wrapped/css.txt
+- /etc/clientlibs/acs-commons/main
+- /etc/clientlibs/acs-commons/main/css.txt
+- /etc/clientlibs/acs-commons/main/js.txt
+- /etc/designs/acs-commons
+- /etc/designs/acs-commons/jcr:content
+- /etc/designs/acs-commons/jcr:content/genericlist
+- /etc/designs/acs-commons/jcr:content/genericlist/list
+- /etc/designs/acs-commons/jcr:content/genericlist/list/section
+- /etc/dam/video/mp3hq
+- /etc/dam/video/mp3hq/jcr:content
+- /etc/dam/video/ogghq
+- /etc/dam/video/ogghq/jcr:content
+- /etc/cloudservices/typekit/jcr:content
+- /etc/cloudservices/dtm/jcr:content
+- /etc/acs-commons/twitter-rate-limit-checker
+- /etc/acs-commons/twitter-rate-limit-checker/jcr:content
+saving approx 0 nodes... 
+Package imported. 
+Starting extraction of subpackage com.cqblueprints.taglib:cqblueprints-taglib-all:5.5.1 
+Creating snapshot for package com.cqblueprints.taglib:cqblueprints-taglib-all:5.5.1 
+A META-INF
+A META-INF/vault
+A META-INF/vault/config.xml
+A META-INF/vault/filter.xml
+A META-INF/vault/nodetypes.cnd
+A META-INF/vault/properties.xml
+A /.content.xml
+A /apps
+A /apps/.content.xml
+A /apps/cqblueprints
+A /apps/cqblueprints/taglib
+A /apps/cqblueprints/taglib/install
+A /apps/cqblueprints/taglib/install/cqblueprints-taglib-5.5.1.jar
+A /apps/cqblueprints/taglib/install/squeakysand-jcr-taglib-0.3.0-bnd.jar
+A /apps/cqblueprints/taglib/install/squeakysand-jsp-taglib-0.4.0-bnd.jar
+A /apps/cqblueprints/taglib/install/squeakysand-sling-taglib-0.3.0-bnd.jar
+- Aggregation status: 8 of 6 prepared, 7 collected
+A META-INF/vault/definition/.content.xml
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/cqblueprints/taglib/install/cqblueprints-taglib-5.5.1.jar
+- /apps/cqblueprints/taglib/install/squeakysand-jcr-taglib-0.3.0-bnd.jar
+- /apps/cqblueprints/taglib/install/squeakysand-jsp-taglib-0.4.0-bnd.jar
+- /apps/cqblueprints/taglib/install/squeakysand-sling-taglib-0.3.0-bnd.jar
+saving approx 0 nodes... 
+Package imported. 
+Package installed in 1693ms.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] com.intelligrape.test - parent .................... SUCCESS [0.185s]
+[INFO] com.intelligrape.test - intelligrape-site-cq-view . SUCCESS [2.108s]
+[INFO] com.intelligrape.test - intelligrape-site-cq-services  SUCCESS [2.950s]
+[INFO] com.intelligrape.test - intelligrape-site-cq-config  SUCCESS [0.319s]
+[INFO] com.intelligrape.test - intelligrape-site-cq-taglib  SUCCESS [3.176s]
+[INFO] com.intelligrape.test - intelligrape-site-cq-content  SUCCESS [0.449s]
+[INFO] com.intelligrape.test - intelligrape-site-cq-all .. SUCCESS [2.735s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.177s
+[INFO] Finished at: Mon Dec 16 16:20:06 IST 2013
+[INFO] Final Memory: 32M/487M
+[INFO] ------------------------------------------------------------------------

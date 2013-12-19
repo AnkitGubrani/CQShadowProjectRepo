@@ -2,9 +2,9 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
 <comment>com.intelligrape.test - intelligrape-site-cq-config</comment>
-<entry key="createdBy">intelligrape</entry>
+<entry key="createdBy">roni</entry>
 <entry key="name">intelligrape-site-cq-config</entry>
-<entry key="created">2013-11-26T22:39:40.610+0530</entry>
+<entry key="created">2013-12-19T11:25:06.281+0530</entry>
 <entry key="groupId">com.intelligrape.test</entry>
 <entry key="version">1.0.0-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>

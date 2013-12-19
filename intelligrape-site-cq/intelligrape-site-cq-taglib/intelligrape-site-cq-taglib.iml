@@ -5,11 +5,12 @@
       <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="com.intelligrape.test.taglib.osgi.Activator" bundleSymbolicName="com.intelligrape.test.intelligrape-site-cq-taglib" bundleVersion="1.0.0.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
         <additionalProperties>
           <property key="Bundle-Description" value="A JSP custom Tag Library for use within JSPs in the 'IntelligrapeSite CQ Excercise' project.During development this bundle can be automatically deployed to your CQ instance by activating the&quot;auto-deploy&quot; profile and running the Maven &quot;install&quot; lifecycle phase (e.g. &quot;mvn -Pauto-deploy install&quot;). Thiscan also be done from within most IDEs like Eclipse." />
-          <property key="Include-Resource" value="OSGI-INF/lib/squeakysand-osgi-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/osgi/squeakysand-osgi/0.4.0/squeakysand-osgi-0.4.0.jar,OSGI-INF/lib/squeakysand-jsp-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/jsp/squeakysand-jsp/0.4.0/squeakysand-jsp-0.4.0.jar,OSGI-INF/lib/squeakysand-commons-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/squeakysand-commons/0.4.0/squeakysand-commons-0.4.0.jar,META-INF/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.tld=$MODULE_DIR$/target/classes/META-INF/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.tld,META-INF/tags/helloWorld.tagx=$MODULE_DIR$/src/main/resources/META-INF/tags/helloWorld.tagx" />
+          <property key="Include-Resource" value="OSGI-INF/lib/squeakysand-osgi-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/osgi/squeakysand-osgi/0.4.0/squeakysand-osgi-0.4.0.jar,OSGI-INF/lib/squeakysand-jsp-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/jsp/squeakysand-jsp/0.4.0/squeakysand-jsp-0.4.0.jar,OSGI-INF/lib/squeakysand-commons-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/squeakysand-commons/0.4.0/squeakysand-commons-0.4.0.jar,META-INF/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.tld=$MODULE_DIR$/target/classes/META-INF/intelligrape-site-cq-taglib-1.0.0-SNAPSHOT.tld" />
           <property key="Sling-Bundle-Resources" value="/META-INF/tags" />
           <property key="Embed-Dependency" value="*;scope=compile|runtime" />
           <property key="Embed-Directory" value="OSGI-INF/lib" />
           <property key="Embed-Transitive" value="true" />
+          <property key="DynamicImport-Package" value="com.sun.management,com.sun.msv.grammar,com.sun.msv.grammar.trex,com.sun.msv.reader,com.sun.msv.reader.trex.ng,com.sun.msv.reader.util,com.sun.msv.util,com.sun.msv.verifier,com.sun.msv.verifier.regexp,jline,org.apache.log4j.jmx,org.apache.log4j.spi,org.jboss.netty.bootstrap,org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.channel.group,org.jboss.netty.channel.socket.nio,org.relaxng.datatype" />
           <property key="Bundle-Name" value="com.intelligrape.test - intelligrape-site-cq-taglib" />
           <property key="Bundle-ClassPath" value=".,OSGI-INF/lib/squeakysand-osgi-0.4.0.jar,OSGI-INF/lib/squeakysand-jsp-0.4.0.jar,OSGI-INF/lib/squeakysand-commons-0.4.0.jar" />
           <property key="Embedded-Artifacts" value="OSGI-INF/lib/squeakysand-osgi-0.4.0.jar;g=&quot;com.squeakysand.osgi&quot;;a=&quot;squeakysand-osgi&quot;;v=&quot;0.4.0&quot;,OSGI-INF/lib/squeakysand-jsp-0.4.0.jar;g=&quot;com.squeakysand.jsp&quot;;a=&quot;squeakysand-jsp&quot;;v=&quot;0.4.0&quot;,OSGI-INF/lib/squeakysand-commons-0.4.0.jar;g=&quot;com.squeakysand&quot;;a=&quot;squeakysand-commons&quot;;v=&quot;0.4.0&quot;" />
@@ -35,6 +36,15 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.6.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.solr:solr-solrj:4.6.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.zookeeper:zookeeper:3.4.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.5.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.noggit:noggit:0.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpclient:4.2.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpcore:4.2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.httpcomponents:httpmime:4.2.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.woodstox:wstx-asl:3.2.7" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.cqblueprints.taglib:cqblueprints-taglib:5.5.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.squeakysand.jcr:squeakysand-jcr-taglib:0.3.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.squeakysand.jcr:squeakysand-jcr:0.3.0" level="project" />
@@ -46,7 +56,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet.jsp:jsp-api:2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:4.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.api:2.2.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.5.2" level="project" />
   </component>
 </module>
 

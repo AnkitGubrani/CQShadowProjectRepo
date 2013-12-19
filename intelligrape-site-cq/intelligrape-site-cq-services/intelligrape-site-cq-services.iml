@@ -8,10 +8,11 @@
           <property key="Embed-Dependency" value="*;scope=compile|runtime" />
           <property key="Embed-Directory" value="OSGI-INF/lib" />
           <property key="Embed-Transitive" value="true" />
+          <property key="DynamicImport-Package" value="com.sun.management,com.sun.msv.grammar,com.sun.msv.grammar.trex,com.sun.msv.reader,com.sun.msv.reader.trex.ng,com.sun.msv.reader.util,com.sun.msv.util,com.sun.msv.verifier,com.sun.msv.verifier.regexp,jline,org.apache.log4j.jmx,org.apache.log4j.spi,org.jboss.netty.bootstrap,org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.channel.group,org.jboss.netty.channel.socket.nio,org.relaxng.datatype" />
           <property key="Bundle-Name" value="com.intelligrape.test - intelligrape-site-cq-services" />
-          <property key="Bundle-ClassPath" value=".,OSGI-INF/lib/squeakysand-osgi-0.4.0.jar,OSGI-INF/lib/commons-lang-2.6.jar,OSGI-INF/lib/jsoup-1.6.1.jar,OSGI-INF/lib/squeakysand-commons-0.4.0.jar" />
-          <property key="Include-Resource" value="OSGI-INF/lib/squeakysand-osgi-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/osgi/squeakysand-osgi/0.4.0/squeakysand-osgi-0.4.0.jar,OSGI-INF/lib/commons-lang-2.6.jar=$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar,OSGI-INF/lib/jsoup-1.6.1.jar=$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.6.1/jsoup-1.6.1.jar,OSGI-INF/lib/squeakysand-commons-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/squeakysand-commons/0.4.0/squeakysand-commons-0.4.0.jar" />
-          <property key="Embedded-Artifacts" value="OSGI-INF/lib/squeakysand-osgi-0.4.0.jar;g=&quot;com.squeakysand.osgi&quot;;a=&quot;squeakysand-osgi&quot;;v=&quot;0.4.0&quot;,OSGI-INF/lib/commons-lang-2.6.jar;g=&quot;commons-lang&quot;;a=&quot;commons-lang&quot;;v=&quot;2.6&quot;,OSGI-INF/lib/jsoup-1.6.1.jar;g=&quot;org.jsoup&quot;;a=&quot;jsoup&quot;;v=&quot;1.6.1&quot;,OSGI-INF/lib/squeakysand-commons-0.4.0.jar;g=&quot;com.squeakysand&quot;;a=&quot;squeakysand-commons&quot;;v=&quot;0.4.0&quot;" />
+          <property key="Bundle-ClassPath" value=".,OSGI-INF/lib/httpcore-4.2.5.jar,OSGI-INF/lib/wstx-asl-3.2.7.jar,OSGI-INF/lib/squeakysand-osgi-0.4.0.jar,OSGI-INF/lib/httpmime-4.2.6.jar,OSGI-INF/lib/httpclient-4.2.6.jar,OSGI-INF/lib/squeakysand-commons-0.4.0.jar,OSGI-INF/lib/zookeeper-3.4.5.jar,OSGI-INF/lib/solr-solrj-4.6.0.jar,OSGI-INF/lib/commons-lang-2.6.jar,OSGI-INF/lib/noggit-0.5.jar,OSGI-INF/lib/jsoup-1.6.1.jar" />
+          <property key="Include-Resource" value="OSGI-INF/lib/httpcore-4.2.5.jar=$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar,OSGI-INF/lib/wstx-asl-3.2.7.jar=$MAVEN_REPOSITORY$/org/codehaus/woodstox/wstx-asl/3.2.7/wstx-asl-3.2.7.jar,OSGI-INF/lib/squeakysand-osgi-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/osgi/squeakysand-osgi/0.4.0/squeakysand-osgi-0.4.0.jar,OSGI-INF/lib/httpmime-4.2.6.jar=$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.2.6/httpmime-4.2.6.jar,OSGI-INF/lib/httpclient-4.2.6.jar=$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.2.6/httpclient-4.2.6.jar,OSGI-INF/lib/squeakysand-commons-0.4.0.jar=$MAVEN_REPOSITORY$/com/squeakysand/squeakysand-commons/0.4.0/squeakysand-commons-0.4.0.jar,OSGI-INF/lib/zookeeper-3.4.5.jar=$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.5/zookeeper-3.4.5.jar,OSGI-INF/lib/solr-solrj-4.6.0.jar=$MAVEN_REPOSITORY$/org/apache/solr/solr-solrj/4.6.0/solr-solrj-4.6.0.jar,OSGI-INF/lib/commons-lang-2.6.jar=$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar,OSGI-INF/lib/noggit-0.5.jar=$MAVEN_REPOSITORY$/org/noggit/noggit/0.5/noggit-0.5.jar,OSGI-INF/lib/jsoup-1.6.1.jar=$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.6.1/jsoup-1.6.1.jar" />
+          <property key="Embedded-Artifacts" value="OSGI-INF/lib/httpcore-4.2.5.jar;g=&quot;org.apache.httpcomponents&quot;;a=&quot;httpcore&quot;;v=&quot;4.2.5&quot;,OSGI-INF/lib/wstx-asl-3.2.7.jar;g=&quot;org.codehaus.woodstox&quot;;a=&quot;wstx-asl&quot;;v=&quot;3.2.7&quot;,OSGI-INF/lib/squeakysand-osgi-0.4.0.jar;g=&quot;com.squeakysand.osgi&quot;;a=&quot;squeakysand-osgi&quot;;v=&quot;0.4.0&quot;,OSGI-INF/lib/httpmime-4.2.6.jar;g=&quot;org.apache.httpcomponents&quot;;a=&quot;httpmime&quot;;v=&quot;4.2.6&quot;,OSGI-INF/lib/httpclient-4.2.6.jar;g=&quot;org.apache.httpcomponents&quot;;a=&quot;httpclient&quot;;v=&quot;4.2.6&quot;,OSGI-INF/lib/squeakysand-commons-0.4.0.jar;g=&quot;com.squeakysand&quot;;a=&quot;squeakysand-commons&quot;;v=&quot;0.4.0&quot;,OSGI-INF/lib/zookeeper-3.4.5.jar;g=&quot;org.apache.zookeeper&quot;;a=&quot;zookeeper&quot;;v=&quot;3.4.5&quot;,OSGI-INF/lib/solr-solrj-4.6.0.jar;g=&quot;org.apache.solr&quot;;a=&quot;solr-solrj&quot;;v=&quot;4.6.0&quot;,OSGI-INF/lib/commons-lang-2.6.jar;g=&quot;commons-lang&quot;;a=&quot;commons-lang&quot;;v=&quot;2.6&quot;,OSGI-INF/lib/noggit-0.5.jar;g=&quot;org.noggit&quot;;a=&quot;noggit&quot;;v=&quot;0.5&quot;,OSGI-INF/lib/jsoup-1.6.1.jar;g=&quot;org.jsoup&quot;;a=&quot;jsoup&quot;;v=&quot;1.6.1&quot;" />
         </additionalProperties>
         <additionalJARContents />
       </configuration>
@@ -36,7 +37,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.api:2.2.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.jcr.api:2.1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.scr:1.6.1-R1236132" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.scr:1.6.3-R1409029" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.scr.annotations:1.9.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.cq:cq-search:5.6.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.cq:cq-statistics:5.6.2" level="project" />
     <orderEntry type="library" name="Maven: com.squeakysand.osgi:squeakysand-osgi:0.4.0" level="project" />
@@ -45,8 +47,28 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.6.1" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.scr.annotations:1.6.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:4.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.adobe.granite:com.adobe.granite.replication.core:5.12.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.adobe.granite:com.adobe.granite.crypto:0.0.22" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.cq.wcm:cq-wcm-api:5.6.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.cq:cq-commons:5.6.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.commons:commons-email:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.mail:mail:1.4.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.commons.json:2.0.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.cq:cq-content-sync:5.6.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.mockito:mockito-all:1.8.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.engine:2.2.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.day.commons.osgi.wrapper:com.day.commons.osgi.wrapper.commons-httpclient:3.1.0.018" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-codec:commons-codec:1.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.jackrabbit:jackrabbit-api:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.solr:solr-solrj:4.6.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.5" level="project" />
+    <orderEntry type="library" name="Maven: org.noggit:noggit:0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.2.6" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:4.2.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.codehaus.woodstox:wstx-asl:3.2.7" level="project" />
   </component>
 </module>
 

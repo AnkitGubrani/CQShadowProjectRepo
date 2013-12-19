@@ -26,6 +26,113 @@
         <cq.port>4502</cq.port>
         <cq.user>admin</cq.user>
         <cq.password>admin</cq.password>
+        <bundle.dynamicImport.package>
+            com.sun.management,
+            com.sun.msv.grammar,
+            com.sun.msv.grammar.trex,
+            com.sun.msv.reader,
+            com.sun.msv.reader.trex.ng,
+            com.sun.msv.reader.util,
+            com.sun.msv.util,
+            com.sun.msv.verifier,
+            com.sun.msv.verifier.regexp,
+            jline,
+            org.apache.log4j.jmx,
+            org.apache.log4j.spi,
+            org.jboss.netty.bootstrap,
+            org.jboss.netty.buffer,
+            org.jboss.netty.channel,
+            org.jboss.netty.channel.group,
+            org.jboss.netty.channel.socket.nio,
+            org.relaxng.datatype,
+            org.apache.commons.net.ftp,
+            org.apache.commons.net.util,
+            org.apache.jasper.compiler,
+            org.apache.jasper.runtime,
+            com.google.common.base,
+            com.google.common.cache,
+            com.google.common.collect,
+            com.google.common.io,
+            com.google.common.net,
+            com.google.common.primitives,
+            com.google.common.util.concurrent,
+            com.sun.jersey.api,
+            com.sun.jersey.api.container,
+            com.sun.jersey.api.core,
+            com.sun.jersey.core.spi.component,
+            com.jcraft.jsch,
+            com.sun.javadoc,
+            com.sun.jersey.server.impl.inject,
+            com.sun.jersey.spi.container,
+            com.sun.jersey.spi.container.servlet,
+            com.sun.jersey.spi.inject,
+            com.sun.jndi.ldap,
+            com.sun.org.apache.xml.internal.serialize,
+            com.sun.tools.doclets.standard,
+            com.vividsolutions.jts.algorithm,
+            com.vividsolutions.jts.geom,
+            com.vividsolutions.jts.io,
+            com.vividsolutions.jts.operation.union,
+            com.vividsolutions.jts.operation.valid,
+            com.vividsolutions.jts.simplify,
+            com.vividsolutions.jts.util,
+            javax.ws.rs,
+            javax.ws.rs.core,
+            javax.ws.rs.ext,
+            jdiff,
+            org.apache.avro,
+            org.apache.avro.data,
+            org.apache.avro.file,
+            org.apache.avro.generic,
+            org.apache.avro.io,
+            org.apache.avro.reflect,
+            org.apache.avro.specific,
+            org.apache.log4j.helpers,
+            org.apache.lucene.expressions,
+            org.apache.lucene.expressions.js,
+            org.apache.lucene.sandbox.queries,
+            org.apache.tools.ant,
+            org.apache.tools.ant.types,
+            org.codehaus.jackson,
+            org.codehaus.jackson.map,
+            org.codehaus.jackson.node,
+            org.codehaus.jackson.type,
+            org.codehaus.jackson.util,
+            org.eclipse.jetty.server,
+            org.eclipse.jetty.server.bio,
+            org.eclipse.jetty.server.handler,
+            org.eclipse.jetty.server.nio,
+            org.eclipse.jetty.server.session,
+            org.eclipse.jetty.server.ssl,
+            org.eclipse.jetty.servlet,
+            org.eclipse.jetty.util.component,
+            org.eclipse.jetty.util.log,
+            org.eclipse.jetty.util.ssl,
+            org.eclipse.jetty.util.thread,
+            org.apache.commons.codec.language.bm,
+            org.apache.commons.configuration,
+            org.apache.commons.daemon,
+            org.jets3t.service,
+            org.jets3t.service.impl.rest.httpclient,
+            org.jets3t.service.model,
+            org.jets3t.service.security,
+            org.joda.convert,
+            org.mortbay.io,
+            org.mortbay.jetty,
+            org.mortbay.jetty.handler,
+            org.mortbay.jetty.nio,
+            org.mortbay.jetty.security,
+            org.mortbay.jetty.servlet,
+            org.mortbay.jetty.webapp,
+            org.mortbay.util.ajax,
+            org.mortbay.thread,
+            org.mortbay.util,
+            org.znerd.xmlenc,
+            sun.misc,
+            sun.net.dns,
+            sun.net.util
+
+        </bundle.dynamicImport.package>
     </properties>
 
     <scm>
@@ -91,7 +198,13 @@
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.scr</artifactId>
-                <version>1.6.1-R1236132</version>
+                <version>1.6.3-R1409029</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.scr.annotations</artifactId>
+                <version>1.9.6</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -143,6 +256,82 @@
                 <version>1.2.0</version>
                 <type>content-package</type>
             </dependency>
+            <dependency>
+                <groupId>com.adobe.granite</groupId>
+                <artifactId>com.adobe.granite.replication.core</artifactId>
+                <version>5.12.2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.day.cq.wcm</groupId>
+                <artifactId>cq-wcm-api</artifactId>
+                <version>5.6.6</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.day.cq</groupId>
+                <artifactId>cq-commons</artifactId>
+                <version>5.6.4</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>org.apache.sling.commons.json</artifactId>
+                <version>2.0.6</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-solrj</artifactId>
+                <version>4.6.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.day.cq</groupId>
+                <artifactId>cq-content-sync</artifactId>
+                <version>5.6.4</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.sling</groupId>
+                <artifactId>org.apache.sling.engine</artifactId>
+                <version>2.2.8</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.day.commons.osgi.wrapper</groupId>
+                <artifactId>com.day.commons.osgi.wrapper.commons-httpclient</artifactId>
+                <version>3.1.0.018</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.day.commons.osgi.wrapper</groupId>
+                <artifactId>com.day.commons.osgi.wrapper.commons-httpclient</artifactId>
+                <version>3.1.0.018</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.jackrabbit</groupId>
+                <artifactId>jackrabbit-api</artifactId>
+                <version>2.6.2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-solrj</artifactId>
+                <version>4.6.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.solr</groupId>
+                <artifactId>solr-core</artifactId>
+                <version>4.6.0</version>
+            </dependency>
+
+            <!--<dependency>-->
+                <!--<groupId>org.apache.solr</groupId>-->
+                <!--<artifactId>solr-core</artifactId>-->
+                <!--<version>4.6.0</version>-->
+            <!--</dependency>-->
+
         </dependencies>
     </dependencyManagement>
 
@@ -176,16 +365,17 @@
                             <Embed-Dependency>*;scope=compile|runtime</Embed-Dependency>
                             <Embed-Directory>OSGI-INF/lib</Embed-Directory>
                             <Embed-Transitive>true</Embed-Transitive>
+                            <DynamicImport-Package>${bundle.dynamicImport.package}</DynamicImport-Package>
                         </instructions>
                     </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
                     <artifactId>maven-scr-plugin</artifactId>
-                    <version>1.7.4</version>
+                    <version>1.15.0</version>
                     <executions>
                         <execution>
-                            <id>generate-scr-descriptor</id>
+                            <id>generate-scr-scrdescriptor</id>
                             <goals>
                                 <goal>scr</goal>
                             </goals>
@@ -200,7 +390,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>2.3.2</version>
+                    <version>3.1</version>
                     <configuration>
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>

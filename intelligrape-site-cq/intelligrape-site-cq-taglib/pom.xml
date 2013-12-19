@@ -105,8 +105,7 @@
                     <instructions>
                         <Bundle-Activator>com.intelligrape.test.taglib.osgi.Activator</Bundle-Activator>
                         <Include-Resource>
-                            META-INF/${project.artifactId}-${project.version}.tld=${project.build.outputDirectory}/META-INF/${project.artifactId}-${project.version}.tld,
-                            {maven-resources}
+                            META-INF/${project.artifactId}-${project.version}.tld=${project.build.outputDirectory}/META-INF/${project.artifactId}-${project.version}.tld
                         </Include-Resource>
                         <Sling-Bundle-Resources>
                             /META-INF/tags
