@@ -1,0 +1,85 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.intelligrape.test:intelligrape-site-cq-services:bundle:1.0.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.felix:org.apache.felix.scr.annotations:jar -> duplicate declaration of version (?) @ line 71, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.intelligrape.test - intelligrape-site-cq-services 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ intelligrape-site-cq-services ---
+[INFO] Deleting /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ intelligrape-site-cq-services ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ intelligrape-site-cq-services ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 1.6
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/intelligrapeComponents/TestServlet.java: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/intelligrapeComponents/TestServlet.java uses unchecked or unsafe operations.
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/intelligrapeComponents/TestServlet.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-scr-plugin:1.15.0:scr (generate-scr-scrdescriptor) @ intelligrape-site-cq-services ---
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/intelligrapeComponents/impl/SearchWrapperImpl.java [1:1]: @Component : Component is defined to generate metatype information, however no properties have been defined; in case no properties are wanted, consider to use 'metatype=false'
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/directorycleanup/impl/DirectoryCleanUpServiceImpl.java [1:1]: @Component : Component is defined to generate metatype information, however no properties have been defined; in case no properties are wanted, consider to use 'metatype=false'
+[WARNING] /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/main/java/com/intelligrape/test/services/GoodbyeWorldService.java [1:1]: @Component : Component is defined to generate metatype information, however no properties have been defined; in case no properties are wanted, consider to use 'metatype=false'
+[INFO] Generating 1 MetaType Descriptors in /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/metatype/com.intelligrape.intelligrapeComponents.SearchServlet.xml
+[INFO] Generating 1 MetaType Descriptors in /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/metatype/com.intelligrape.intelligrapeComponents.impl.SearchWrapperImpl.xml
+[INFO] Generating 1 MetaType Descriptors in /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/metatype/com.intelligrape.directorycleanup.impl.DirectoryCleanUpServiceImpl.xml
+[INFO] Generating 1 MetaType Descriptors in /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/metatype/com.intelligrape.test.services.GoodbyeWorldService.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.intelligrapeComponents.SearchServlet.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.intelligrapeComponents.impl.SearchWrapperImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.search.ReplicationEventHandler.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.directorycleanup.TestCleanUpServlet.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.directorycleanup.impl.DirectoryCleanUpServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/classes/OSGI-INF/com.intelligrape.test.services.GoodbyeWorldService.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ intelligrape-site-cq-services ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ intelligrape-site-cq-services ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ intelligrape-site-cq-services ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ intelligrape-site-cq-services ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ intelligrape-site-cq-services ---
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-services/1.0.0-SNAPSHOT/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar
+[INFO] Installing /home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/pom.xml to /home/roni/.m2/repository/com/intelligrape/test/intelligrape-site-cq-services/1.0.0-SNAPSHOT/intelligrape-site-cq-services-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ intelligrape-site-cq-services ---
+[INFO] Installing com/intelligrape/test/intelligrape-site-cq-services/1.0.0-SNAPSHOT/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] --- maven-sling-plugin:2.1.0:install (install-bundle) @ intelligrape-site-cq-services ---
+[INFO] Installing Bundle com.intelligrape.test.intelligrape-site-cq-services(/home/roni/Desktop/cq5.6/project/CQShadowProjectRepo/intelligrape-site-cq/intelligrape-site-cq-services/target/intelligrape-site-cq-services-1.0.0-SNAPSHOT.jar) to http://localhost:4502/apps/intelligrape-site-cq/install via PUT
+[INFO] Bundle installed
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.722s
+[INFO] Finished at: Mon Dec 09 18:49:08 IST 2013
+[INFO] Final Memory: 27M/334M
+[INFO] ------------------------------------------------------------------------

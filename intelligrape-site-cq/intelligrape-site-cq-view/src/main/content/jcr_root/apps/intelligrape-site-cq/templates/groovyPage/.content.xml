@@ -7,5 +7,5 @@
     ranking="{Long}100">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="/apps/intelligrapeComponents/components/page/groovy"/>
+        sling:resourceType="intelligrape-site-cq/components/page/groovy"/>
 </jcr:root>

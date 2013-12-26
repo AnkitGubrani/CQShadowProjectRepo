@@ -1,3 +1,4 @@
+<%@ page trimDirectiveWhitespaces="true" %>
 <%--
   Copyright 1997-2008 Day Management AG
   Barfuesserplatz 6, 4001 Basel, Switzerland
