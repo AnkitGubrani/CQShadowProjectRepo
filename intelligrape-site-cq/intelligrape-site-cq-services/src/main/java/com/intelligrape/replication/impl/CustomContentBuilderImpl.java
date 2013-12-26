@@ -160,16 +160,16 @@ public class CustomContentBuilderImpl implements ContentBuilder {
 
     private ReplicationContent pageMoveEvent(String currentPageUri, String solrUri, ReplicationActionType operation, ReplicationContentFactory factory) throws Exception {
 
-//        boolean flag = isPageUriStartsWithBlackListPaths(currentPageUri);
-//        if (!flag) {
-//            if (solrUri.equals("")) {
-//                log.info(" \n Solr User Agents doesn't Have Read Permission for {} \n ", currentPageUri);
-//            } else {
-//                log.info("\n Move Operation Performed on page \n");
-//                if (operation.equals(ReplicationActionType.DELETE))
-//                    return pageDeactivationEvent(currentPageUri, solrUri, factory);
-//            }
-//        }
+        boolean flag = isPageUriStartsWithBlackListPaths(currentPageUri);
+        if (!flag) {
+            if (solrUri.equals("")) {
+                log.info(" \n Solr User Agents doesn't Have Read Permission for {} \n ", currentPageUri);
+            } else {
+                log.info("\n Move Operation Performed on page \n");
+                if (operation.equals(ReplicationActionType.DELETE))
+                    return pageDeactivationEvent(currentPageUri, solrUri, factory);
+            }
+        }
         return pageDeactivationEvent("_blank_", solrUri, factory);
     }
 

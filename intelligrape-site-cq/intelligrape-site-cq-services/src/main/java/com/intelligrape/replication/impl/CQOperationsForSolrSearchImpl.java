@@ -39,24 +39,4 @@ public class CQOperationsForSolrSearchImpl implements CQOperationsForSolrSearch 
         requestProcessor.processRequest(request, response, resourceResolver);
         return new String(out.toByteArray(), "UTF-8");
     }
-
-    @Override
-    public int postXMLDataToSolr(String xml, String xmlPostingUrl) throws Exception {
-
-        int i = 0;
-        PostMethod post = null;
-        try {
-            HttpClient client = new HttpClient();
-            post = new PostMethod(xmlPostingUrl);
-            StringRequestEntity body = new StringRequestEntity(xml, "application/xml", "UTF-8");
-            post.addParameter("commit", "true");
-            post.setRequestEntity(body);
-            post.setRequestHeader("Content-length", String.valueOf(body.getContentLength()));
-            i = client.executeMethod(post);
-        } finally {
-            if (post != null)
-                post.releaseConnection();
-        }
-        return i;
-    }
 }

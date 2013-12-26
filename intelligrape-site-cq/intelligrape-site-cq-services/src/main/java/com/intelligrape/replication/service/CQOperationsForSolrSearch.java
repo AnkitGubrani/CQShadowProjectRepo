@@ -8,5 +8,4 @@ import java.util.Iterator;
 
 public interface CQOperationsForSolrSearch {
     String getXMLData(ResourceResolver resourceResolver, String xmlDataUrl) throws Exception;
-    public int postXMLDataToSolr(String xml, String xmlPostingUrl) throws Exception;
 }
